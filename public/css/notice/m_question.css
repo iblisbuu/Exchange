@@ -1,0 +1,118 @@
+.que-content {
+    padding : 1em 1em 0 1em;
+}
+
+.que-content .que-header .que-input-header-group {
+    margin : 30px 0 0 0;
+    display : flex;
+    flex-direction: column;
+}
+
+.que-content .que-header .que-input-header-group span {
+    margin-left : 10px;
+    font-size: 14px;
+    color: #979797;
+}
+
+.que-content .que-header .que-input-header-group input {
+    color : #fff;
+}
+
+.que-content .que-header .que-input-header-group input[type="text"] {
+    height : 39.5px;
+    border : none;
+    border-bottom : 1px solid #4d4d4d;
+    background-color : transparent;
+}
+
+/* 1:1문의하기 input */
+.que-content .que-body .que-input-body-group {
+    margin-top : 37px;
+    display : flex;
+    flex-direction: column;
+}
+
+.que-content .que-body .que-input-body-group.file {
+    display : block;
+}
+
+.que-content .que-body .que-input-body-group span {
+    width : 100%;
+    display : block;
+    font-size: 14px;
+    color: #ffffff;
+    margin-bottom : 15px;
+}
+
+.que-content .que-body .que-input-body-group textarea {
+    height : 379px;
+    border: solid 0.5px #333333;
+    background-color: #1b1b1d;
+    color: #979797;
+    padding : 1.5em 1em;
+    resize: none;
+}
+
+/* 1:1문의하기 내용 */
+.que-content .que-body .que-input-body-group textarea::placeholder {
+    color : #979797;
+}
+
+.que-content .que-body .que-input-body-group .file-btn {
+    margin-right : 15px;
+    margin-bottom: 10px;
+    width: 111.5px;
+    height: 40px;
+    border-radius: 3px;
+    border: solid 0.5px #777777;
+    font-size: 14px;
+    color: #979797;
+    text-align : center;
+    line-height: 40px;
+    display : inline-block;
+}
+
+.que-content .que-body .que-input-body-group input[type="file"] {
+    display : none;
+}
+
+.que-content .que-body .que-input-body-group .file-name-box {
+    vertical-align: top;
+    display : inline-block;
+    font-size: 14px;
+    color: #139be1;
+}
+
+.que-input-body-group.file .file-name-box .file-name > button {
+    margin-left: 5px;
+    background: transparent url('/public/img/common/close.svg') no-repeat center;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-size: contain;
+}
+
+.que-btn {
+    margin-top : 30px;
+    margin-bottom : 62.5px;
+    padding : 0 1em;
+    display : flex;
+}
+
+.que-btn button {
+    width : 50%;
+    height : 60px;
+    border-radius: 6px;
+    border: solid 0.5px #444444;
+    font-size: 17px;    
+    font-weight: 500;
+    background-color: #39393c;
+    color: #979797;
+}
+
+.que-btn button:nth-child(2) {
+    margin-left : 10px;
+    color: #131415;
+    border : none;
+    background-image: linear-gradient(to right, #f8db00 -23%, #f0b600);
+}

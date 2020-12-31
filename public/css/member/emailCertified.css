@@ -1,0 +1,95 @@
+#main {
+    display: flex;
+}
+
+.email-certified-box > button {
+    width: 100%;
+    outline: none;
+    min-height: 56px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.15);
+    background-color: #bdbdbd;
+    border-color: #bdbdbd;
+    transition: all 300ms;
+    margin: 40px 0 20px;
+}
+
+.email-certified-box > button.btn-yellow {
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.15);
+    background-color: #f0b600;
+    color: #ffffff;
+    border-color: #f0b600;
+}
+
+.email-certified-box input:disabled {
+    background-color: #f0f0f0;
+    color: #aaaaaa;
+}
+
+
+.common-input.certified-input .certified-alert, .email-certified-box .certified-alert {
+    position: relative;
+    background-color: #f9f9f9;
+    padding: 20px 20px 20px 50px;
+    font-weight: normal;
+    letter-spacing: -0.23px;
+    font-size: 14px;
+    color: #333333;
+    line-height: 1.73;
+}
+
+.common-input.certified-input .certified-alert a, .email-certified-box .certified-alert a {
+    color: #ff5b5b;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.common-input.certified-input .certified-alert:before, .email-certified-box .certified-alert:before {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    background-image: url("/public/img/common/attention.svg");
+    font-weight: 900;
+    top: 23px;
+    left: 20px;
+    color: #838383;
+    width: 21px;
+    height: 18px;
+    object-fit: contain;
+}
+
+
+.common-input.certified-input, #certifiedMail .certified-input {
+    padding: 0 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.common-input.certified-input #authNum, #authNum {
+    padding: 14px 0;
+    border: 0;
+    height: 100%;
+    width: 60%;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+.common-input.certified-input #authNum::placeholder, #authNum::placeholder {
+    color: #aaa;
+}
+
+.common-input.certified-input .auth-time, .common-input.certified-input .auth-time span, .auth-time, .auth-time span {
+    font-size: 16px;
+    color: #9c9c9c;
+    font-weight: normal;
+}
+
+.common-input.certified-input .common-input-group > .common-alert, .common-input-group > .common-alerts {
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #e21d2c;
+}

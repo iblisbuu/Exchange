@@ -1,0 +1,88 @@
+#ui-datepicker-div {
+    border-radius: 3px !important;
+    border: 1px solid #979797 !important;
+    background-color: #fff !important;
+    padding: 0px 5px !important;
+    width: 300px !important;
+    height: auto !important;
+}
+
+.ui-datepicker-header {
+    display: flex !important;
+    align-items: center !important;
+    height: 45px !important;
+    border: 0 !important;
+    border-bottom: 1px solid #eee !important;
+    background: none !important;
+}
+
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+}
+
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+    border: 0 !important;
+    background: none !important;
+    font-weight: normal;
+    color: #212121;
+}
+
+.ui-datepicker .ui-datepicker-title {
+    margin: 0 auto !important;
+    color: #f0b600 !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+}
+
+.ui-datepicker-calendar > thead {
+    border-bottom: 1px solid #eee !important;
+}
+
+.ui-datepicker th {
+    height: 36px !important;
+}
+
+.ui-datepicker-calendar > thead tr th span {
+    color: #999999 !important;
+    font-size: 11px !important;
+}
+
+.ui-datepicker td {
+    padding: 0 !important
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    background: none !important;
+    font-size: 11px !important;
+    color: #000 !important;
+    height: 36px !important;
+    line-height: 36px !important;
+    text-align: center !important;
+    border: 0 !important
+}
+
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+    color: #e3ac00 !important
+}
+
+.ui-widget-header .ui-icon {
+    background-image: none !important;
+}
+
+.ui-datepicker .ui-datepicker-prev {
+    background: url("/public/img/common/arrow-left.svg") no-repeat center !important;
+}
+
+.ui-datepicker .ui-datepicker-next {
+    background: url("/public/img/common/arrow-right.svg") no-repeat center !important;
+}
+
+.ui-datepicker-current-day {
+    background-color: #f0f0f0 !important;
+    border-radius: 5px !important;
+}
+
+.ui-datepicker-current-day .ui-state-active {
+    font-weight: bold !important;
+}

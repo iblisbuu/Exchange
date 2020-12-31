@@ -1,0 +1,242 @@
+.wp-withdraw > div:first-child {
+    width: 544px;
+}
+
+.wp-withdraw > div:last-child {
+    width: 380px;
+}
+
+.wp-withdraw .wp-left {
+    border-radius: 6px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 50px;
+}
+
+.box-sms-number {
+    position: relative;
+    text-align: left;
+}
+
+.alert-message {
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(calc(100% + 6px));
+}
+
+.wp-withdraw .wp-left p {
+    margin-bottom: 20px;
+    font-weight: 400;
+    position: relative !important;
+    transform: skew(-0.1deg) !important;
+}
+
+.box-withdraw-price p {
+    display: block !important;
+}
+
+.wp-withdraw .wp-right {
+    text-align: left;
+}
+
+.wp-withdraw .wp-right .wp-left {
+    padding: 18px 40px;
+    margin-bottom: 50px;
+}
+
+.wp-withdraw .wp-right .wp-bottom {
+    padding: 0 37px 0 20px;
+}
+
+.wp-withdraw .wp-bottom p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #0a0a0a;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.wp-withdraw .wp-bottom p img {
+    margin-right: 5px;
+}
+
+.wp-withdraw .wp-bottom ul li {
+    position: relative;
+    padding-left: 7px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.wp-withdraw .wp-bottom ul li:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '-';
+    display: inline-block;
+}
+
+.wallet-input-box {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.wallet-input-box span {
+    font-size: 14px;
+    color: #0a0a0a;
+    font-weight: normal;
+    width: 92px;
+    display: inline-block;
+    margin-right: 10px;
+    text-align: left;
+}
+
+.wallet-input-box button {
+    width: 86px;
+    box-shadow: none;
+    padding: 6px 0;
+    font-size: 13px;
+    font-weight: 500;
+    border: 1px solid #dda800;
+}
+
+.wallet-input-box input {
+    padding: 6px 15px;
+    width: 270px;
+    margin-right: 7px;
+    font-size: 12px;
+    color: #777;
+    border: 1px solid #979797;
+    background-color: #f4f4f4;
+    border-radius: 6px;
+    position: relative;
+}
+
+.box-withdraw-price {
+    position: relative;
+    text-align: left;
+}
+
+.alert-tag span {
+    margin-right: 5px;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.alert-tag {
+    margin-left: 100px;
+    display: inline-block;
+    margin-bottom: 0 !important;
+}
+
+.w-possible-price {
+    font-weight: 500;
+}
+
+.wp-withdraw .box-total-price p {
+    margin-bottom: 5px !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wp-withdraw .box-total-price p span {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+
+.wp-withdraw .wp-left hr {
+    border: solid 1px #e5e5e5;
+}
+
+
+.wp-withdraw .wp-left .h-w-top-bar {
+    margin: 56px -50px 20px;
+}
+
+.wp-withdraw .wp-left hr.h-w-down-bar {
+    margin: 20px -50px 30px;
+}
+
+.wp-withdraw .box-sms.wallet-input-box button {
+    width: 110px;
+}
+
+.wp-withdraw .box-sms.wallet-input-box input {
+    width: 250px;
+}
+
+.wp-withdraw .box-otp.wallet-input-box input {
+    margin-right: 0;
+    flex: 1;
+    width: auto;
+}
+
+.wp-withdraw .wp-agree-box {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.chk-label.wd-agree {
+    display: inline-flex;
+    margin-bottom: 20px;
+}
+
+.applyWithdraw {
+    width: 200px;
+    height: 46px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 500;
+    border-color: #dda800;
+    background-color: #f0b600;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 200ms, border-color 200ms;
+}
+
+.applyWithdraw:disabled {
+    cursor: not-allowed;
+    border-color: #a9a9a9;
+    background-color: #a9a9a9;
+}
+
+.wp-w-limit h3 {
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+}
+
+.wp-w-limit hr {
+    height: 0 !important;
+    border: 0 !important;
+    border-top: 1px solid #e5e5e5 !important;
+    margin: 20px -40px;
+}
+
+
+.wp-withdraw .wp-w-limit ul li {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.wp-withdraw .wp-w-limit ul li span:first-child {
+    text-align: right;
+}
+
+.wpwithdraw .wp-w-limit ul li :last-child {
+    margin-bottom: 0;
+}

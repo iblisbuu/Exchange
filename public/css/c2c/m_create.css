@@ -1,0 +1,298 @@
+#main {
+    background-color: #202022;
+    padding-bottom: 0 !important;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+#main > div {
+    width : 100%;
+    color : #ffffff;
+}
+
+#main ul {
+    margin : 0px;
+    padding : 0px;
+    list-style: none;
+}
+
+.hide {
+    display : none;
+}
+
+.color {
+    color : #0a0a0a !important;
+}
+
+/* 상단 title */
+.account-section {
+    position: relative;
+    height : 65px;
+    color : #ffffff;
+    line-height: 65px;
+    text-align: center;
+    font-size: 18px;
+    background-color: #131314;
+    font-weight: 500;
+}
+
+.account-section .hd-back {
+    color : #fff;
+    position: absolute;
+    left : 9px;
+    top : 16.5px;
+    line-height : 0px;
+}
+
+.account-section .hd-back i {
+    font-size : 30px;
+}
+
+/* 개인거래 생성 */
+.cre-title {
+    background-color: #202022;
+    padding-top : 45px;
+    padding-left : 21px;
+    height : 100px;
+    font-family: AppleSDGothicNeo;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.common-bg {
+    height : auto;
+    background-color: #29292b !important;
+}
+
+.common-bg .cre-form {
+    padding : 40px 16px 0 16px;
+    width : 100%;
+    height : 100%;
+}
+
+/* 개인거래생성 체크박스(거래유형, 공개범위) */
+.common-bg .cre-form .checkbox-group {
+    width : 100%;
+    height : 61.5px;
+    margin-bottom : 40px;
+}
+
+.common-bg .cre-form .checkbox-group>label {
+    font-size: 16px;
+    font-weight: 500;
+    color : #fff;
+}
+
+.common-bg .cre-form .checkbox-group .cre-chk-box {
+    margin-top : 15px;
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.common-bg .cre-form .checkbox-group .cre-chk-box div {
+    position: relative;
+    width :50%;
+}
+
+.common-bg .cre-form .checkbox-group .cre-chk-box label {
+    position: relative;
+    color : #fff;
+}
+
+.common-bg .cre-form .checkbox-group .cre-chk-box input {
+    width : 23px;
+    height : 23px;
+    vertical-align: top;
+    opacity: 0;
+}
+
+.common-bg .cre-form .checkbox-group .cre-chk-box label:before {
+    position: absolute;
+    left: -28px;
+    top: 0;
+    display: inline-block;
+    content: '';
+    width: 20px;
+    height: 20px;
+    border: 1px solid #989898;
+    border-radius: 50%;
+}
+
+.cre-chk-box i {
+    position : absolute;
+    width : 23px;
+    height : 23px;
+    left : -2px;
+    border: 1px solid #DDA800;
+    background-color: #F0B600;
+    color : #ffffff;
+    border-radius: 50%;
+    font-size : 15px;
+    text-align: center;
+    line-height: 22px;
+}
+
+/* 개인거래생성 input */
+.input-group {
+    position : relative;
+    height : auto;
+    margin-bottom : 40px;
+}
+
+.input-group label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.input-group input {
+    margin-top : 15px;
+    width : 100%;
+    height : 40px;
+    border-radius: 3px;
+    border: solid 0.5px #555555;
+    background-color: #0a0a0a;
+    text-indent: 15px;
+    font-size: 16px;
+    color: #777777;
+}
+
+.input-group input::placeholder {
+    font-size: 16px;
+    color: #777777;
+}
+
+.cre-coin:before {
+    position: absolute;
+    top: 55px;
+    right: 20px;
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    content: '';
+    background: url("/public/img/common/arrow-bottom.svg") no-repeat center;
+    background-size: contain;
+    transition: none;
+}
+
+.input-group .cre-price-box {
+    position: absolute;
+    top: 40px;
+    right: 0px;
+}
+.input-group .cre-price-box button {
+    width : 38.5px;
+    height : 40px;
+    border-left : solid 0.5px #333;
+    border-right : solid 0.5px #333;
+    background-color: transparent;
+}
+
+.cre-price-box > button > i {
+    font-size: 19px;
+    color: #979797;
+    font-weight: 800;
+}
+
+.input-group img {
+    position: absolute;
+    width : 20px;
+    height : 18.5px;
+    top : 48.5px;
+    right : 15px;
+}
+
+.input-group p {
+    text-align: right;
+    color: #777777;
+}
+
+.input-group .cre-possible-box {
+    padding-top : 10px;
+}
+
+.input-group li {
+    width: 100%;
+    height: 40px;
+    border: solid 0.5px #555555;
+    background-color: #0a0a0a;
+    font-size: 16px;
+    color: #ffffff;
+    text-indent: 15px;
+    line-height: 40px;
+}
+
+.cre-total-box {
+    margin-bottom : 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cre-total-box * {
+    color: #f0b600;
+    font-weight: 500;
+}
+
+.cre-total-box>span {
+    width: 30%;
+    font-size: 16px;
+}
+
+.cre-total-box p span {
+    font-size: 25px;
+}
+
+.cre-total-box > p {
+    width: 70%;
+    text-align: right;
+}
+
+.cre-total-box .cre-total-unit {
+    font-size : 16px;
+    word-break: break-all;
+}
+
+.cre-btn-box {
+    margin-bottom : 40px;
+    display: flex;
+}
+
+.cre-btn-box button {
+    width: 50%;
+    height : 60px;
+    border-radius: 6px;
+    font-family: NotoSansCJKkr;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.cre-btn-box .cre-btn-cancel {
+    margin-right : 10px;
+    border: solid 0.5px #444444;
+    background-color: #39393c;
+    color: #979797;
+}
+
+.cre-btn-box .cre-btn-submit {
+    color: #131415;
+    background-image: linear-gradient(to right, #f8db00 -23%, #f0b600);
+}
+
+/* 달력 팝업 */
+#ui-datepicker-div {
+    left : 16px !important;
+    right : 16px !important;
+}
+
+/* 팝업 */
+.popup-order-ul > li > * {
+    color: #0a0a0a !important;
+}
+
+.popup-order-ul > li > span {
+    text-align: right !important;
+}

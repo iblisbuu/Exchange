@@ -1,0 +1,60 @@
+#main {
+    display: flex;
+}
+
+.common-bg {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start !important;
+}
+
+.account-section > .wrap-middle > h1 {
+    color: #ffffff;
+    font-size: 32px;
+    text-align: left;
+    margin-bottom: 50px;
+    width: 100%;
+
+}
+
+.common-yellow-box {
+    border-image-width: 6px 0 0 0 !important;
+    width: 100% !important;
+    padding: 100px !important;
+}
+.common-yellow-box >div:nth-child(2){
+    margin-top: 100px;
+}
+
+.common-yellow-box h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+table {
+    text-align: center !important;
+    border-bottom: 2px solid #ccc;
+}
+
+.member-table th {
+    text-align: center !important;
+}
+
+.member-table td {
+    font-weight: 500 !important;
+}
+
+.member-table th,.member-table td {
+    border-right: 1px solid #cccccc;
+}
+
+.member-table th:last-child,.member-table td:last-child {
+    border-right: 0
+}
+
+
+.fee-desc{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    line-height: 1.86;
+}

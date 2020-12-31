@@ -1,0 +1,16 @@
+.member-title {
+    padding-bottom : 0px !important;
+}
+
+#otpNum {
+    text-indent : 12.5px !important;
+}
+
+.alert-message {
+    font-size : 13px !important;
+    color: #d95151 !important;
+}
+
+.member-box .member-btn {
+    padding: 30px 1em 76.5px 1em !important;
+}

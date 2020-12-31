@@ -1,0 +1,589 @@
+#main {
+    display: flex;
+}
+
+.common-bg {
+    display: block !important;
+}
+
+.hide {
+    display : none !important;
+}
+
+.text-left {
+    text-align: left;
+    text-indent: 15px;
+}
+
+.padding-right {
+    padding-right : 15px;
+}
+
+/* 상단 title */
+.account-section {
+    position: relative;
+    width:100%;
+    height : 65px;
+    color : #ffffff;
+    line-height: 65px;
+    text-align: center;
+    font-size: 18px;
+    background-color: #131314;
+    font-weight: 500;
+}
+
+.account-section .hd-back {
+    color : #fff;
+    position: absolute;
+    left : 9px;
+    top : 16.5px;
+    line-height : 0px;
+}
+
+.account-section .hd-back i {
+    font-size : 30px;
+}
+
+/* 지갑관리 */
+.wallet-manage, .wallet-bank {
+    width : 100%;
+    height : auto;
+}
+
+.wallet-manage .wallet-title, .wallet-bank .wallet-title {
+    width : 100%;
+    height : 102px;
+    color : #fff;
+    font-size: 25px;
+    font-weight: 500;
+    padding : 45px 0 0 16px;
+}
+
+.wallet-manage .wallet-table {
+    width : 100%;
+    height : auto;
+    border-top : 1px solid #444;
+}
+
+.wallet-manage .wallet-table>div {
+    width : 100%;
+    height : auto;
+    display : flex;
+}
+
+.wallet-manage .wallet-table>div>span {
+    font-size: 14px;
+    color : #fff;
+    border-bottom : 1px solid #444;
+    padding: 1em 1.3em 1em 1.3em;
+}
+
+.wallet-manage .wallet-table>div>span:nth-child(1) {
+    width : 40%;
+    border-right : 1px solid #444;
+}
+
+.wallet-manage .wallet-table>div>span:nth-child(2) {
+    text-align: right;
+    width : 60%;
+    position : relative;
+}
+
+.wallet-manage .wallet-table>div>span:nth-child(2) p {
+    position : absolute;
+    top : 50%;
+    right : 1em;
+    transform : translateY(-50%);
+}
+
+.wallet-manage .wallet-table>div>span:nth-child(2) p span {
+    display : block;
+}
+
+.wallet-manage .wallet-table .wm-p-total {
+    color: #f0b600;
+}
+
+.wallet-manage .wallet-table .wm-p-rate.down {
+    color: #0e81e5
+}
+
+.wallet-manage .wallet-table .wm-p-rate.up {
+    color: #ff4953;
+}
+
+.wallet-bank .search-box {
+    position : relative;
+    width : 100%;
+    height : auto;
+    overflow: hidden;
+    margin-top : 5.5px;
+    justify-content: space-around;
+    margin-bottom : 15px;
+    padding : 0 1em 0 1em;
+}
+
+/* 지갑관리 검색 내 보유코인 라디오 */
+.wallet-bank .search-box .radio {
+    position : absolute;
+    float : left;
+    top : 50%;
+    transform: translateY(-50%);
+    width : 30%;
+}
+
+.wallet-bank .search-box .radio input[type="checkbox"] {
+    width : 23px;
+    height : 23px;
+    opacity: 0;
+    vertical-align: middle;
+    float : left;
+    margin-right : 0.2em;
+}
+
+.wallet-bank .search-box .radio label:before {
+    position: absolute;
+    width : 23px;
+    height : 23px;
+    top: 50%;
+    left : 0;
+    content: '';
+    transform: translateY(-50%);
+    background-image: url(/public/img/common/btn-ck-agree-bf.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+
+.wallet-bank .search-box .radio label {
+    font-size: 14px;
+    color : #fff;
+}
+
+.wallet-bank .search-box .radio .xi-check-coin {
+    position : absolute;
+    width : 23px;
+    height : 23px;
+    left : -2px;
+    border: 1px solid #DDA800;
+    background-color: #F0B600;
+    color : #ffffff;
+    border-radius: 50%;
+    font-size : 15px;
+    text-align: center;
+    line-height: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* 지갑관리 검색 */
+.wallet-bank .search-box .search {
+    position : relative;
+    float : right;
+    width : 67%;
+    height : 40px;
+    border-radius: 5px;
+    border: solid 1px #333333;
+    background-color: #1b1b1d;
+}
+
+.wallet-bank .search-box .search input {
+    width : 92%;
+    height : 100%;
+    background: transparent;
+    border : none;
+    text-indent: 15px;
+    color : #777;
+}
+
+.wallet-bank .search-box .search input::placeholder {
+    color : #777;
+}
+
+.wallet-bank .search-box .search .btn-search {
+    position : absolute;
+    right : 6px;
+    width: 25px;
+    height: 25px;
+    background: transparent url("/public/img/c2c/search.svg") no-repeat 50% 50%;
+    background-size: contain;
+    transform: translateY(25%);
+}
+
+/* 입출금 table */
+.bank-table>div {
+    display : flex;
+    border-top : 1px solid #444;
+}
+
+.bank-table>div>span {
+    font-size: 13px;
+    color: #ffffff;
+    padding : 1em 1em;
+}
+
+.bank-table>div>span:nth-child(1) {
+    width : 40%;
+}
+
+.bank-table>div>span:nth-child(2) {
+    width : 60%;
+    text-align: right;
+}
+
+.bank-table .no-data {
+    display : block;
+    text-align: center;
+}
+
+.bank-table .table-content span:nth-child(1) {
+    transform: translateY(25%);
+}
+
+.bank-table .table-content span>div {
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border: solid 0.5px #ffffff;
+    background-color: transparent;
+    color : #fff;
+    margin-bottom : 0.6em;
+    float : left;
+}
+
+.bank-table div span p {
+    line-height : 1.8em;
+}
+
+.bank-table div span .color {
+    font-size: 13px;
+    color: #777777;
+    display : flex;
+}
+
+.bank-table div span .color label {
+    width : 50%;
+    height : 100%;
+    word-break: break-all;
+}
+
+.bank-table div span p button {
+    width: 23vw;
+    height: 40px;
+    border-radius: 5px;
+    border: solid 0.5px #ffffff;
+    background-color: transparent;
+    color : #fff;
+    margin-bottom : 0.6em;
+}
+
+.bank-table div span .bank-table-btns {
+    margin: 0.4em 0 0 0;
+}
+
+.bank-table div span .bank-table-btns .active {
+    background-color: #ffffff !important;
+    color: #0a0a0a !important;
+}
+
+.bank-table div span .bank-table-btns .prepare {
+    background-color: #39393c !important;
+    color: #777777 !important;
+}
+
+.bank-table div span .bank-table-btns .btn-disabled {
+    background-color: #a9a9a9;
+    color: #fff;
+    border-color: #a9a9a9;
+}
+
+.bank-table .deposit, .bank-table .withdraw {
+    flex-direction: column;
+}
+
+.bank-table .deposit .wb-title, .bank-table .withdraw .wb-title {
+    padding : 40px 1em 25px 1em;
+    font-size: 15px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.bank-table .deposit .wb-content, .bank-table .withdraw .wb-content {
+    padding : 0 1em;
+    width : 100%;
+    height : auto;
+}
+
+.bank-table .deposit .wb-content>div {
+    width : 100%;
+    height : 100%;
+    border: solid 0.5px #333333;
+    background-color: #29292b;
+    color: #ffffff;
+    padding : 40px 1em 0 1em;
+    text-align: center;
+}
+
+.bank-table .deposit .wb-content>div input[type="text"] {
+    font-size: 13px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.bank-table .deposit .wb-content div .wallet-loading {
+    width : 179px;
+    height : 179px;
+}
+
+.bank-table .deposit .wb-content div p {
+    margin : 1em 0;
+}
+
+.bank-table .deposit .wb-content div input[type="text"] {
+    width : 100%;
+    height : 40px;
+    border-radius: 3px;
+    border: solid 0.5px #555555;
+    background-color: #0a0a0a;
+}
+
+.bank-table .deposit .wb-content div button {
+    margin : 25px 0 40px 0;
+    width : 100%;
+    height : 55px;
+    border-radius: 6px;
+    background-image: linear-gradient(to right, #f8db00 -23%, #f0b600);
+    font-size: 17px;
+    font-weight: 500;
+    color: #131415;
+}
+
+.bank-table .deposit .wb-right, .bank-table .withdraw .wb-right {
+    width : 100%;
+    height : auto;
+    padding : 25px 1em 40px 1em;
+}
+
+.bank-table .deposit .wb-right p, .bank-table .withdraw .wb-right p {
+    font-size: 14px;
+    color: #ffffff;
+    padding : 0.3em 0;
+}
+
+.bank-table .deposit .wb-right p img, .bank-table .withdraw .wb-right p img {
+    vertical-align: -3px;
+}
+
+.bank-table .deposit .wb-right ul li, .bank-table .withdraw .wb-right ul li {
+    font-size: 13px;
+    color: #ffffff;
+    padding : 0.3em 0;
+}
+
+/* 출금 */
+.bank-table .withdraw .wb-content>div {
+    width : 100%;
+    height : 100%;
+    border: solid 0.5px #333333;
+    background-color: #29292b;
+    color: #ffffff;
+    margin-bottom : 10px;
+}
+
+.bank-table .withdraw .wb-content .wb-right {
+    background-color: #1b1b1d;
+    border : none;
+}
+
+.bank-table .withdraw .wb-content>div .limit-title {
+    height : 70.5px;
+    line-height : 70.5px;
+    font-weight: 500;
+    border-bottom : 1px solid #555;
+    padding : 0 1em;
+}
+
+.bank-table .withdraw .wb-content>div .limit-content {
+    padding : 1.5em 1em;
+    line-height : 30px;
+    height : 132px;
+    display : flex;
+    flex-direction: column;
+}
+
+.bank-table .withdraw .wb-content>div .limit-content p {
+    display : flex;
+}
+
+.bank-table .withdraw .wb-content>div .limit-content span:nth-child(1) {
+    width : 40%;
+    font-size: 13px;
+}
+
+.bank-table .withdraw .wb-content>div .limit-content span:nth-child(2) {
+    width : 60%;
+    text-align: right;
+    font-size: 13px;
+}
+
+.bank-table .withdraw .wb-content form {
+    width : 100%;
+    height : 100%;
+    border: solid 0.5px #333333;
+    background-color: #29292b;
+    color: #ffffff;
+    padding : 40px 0 25px 0;
+}
+
+.bank-table .withdraw .wb-content .wp-left .wallet-input-box {
+    display : flex;
+    flex-direction: column;
+    align-items : baseline;
+    margin-bottom : 30px;
+    padding : 0 1em;
+}
+
+.bank-table .withdraw .wb-content .wp-left .wallet-input-box>span {
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom : 15px;
+}
+
+.bank-table .withdraw .wb-content .wp-left .wallet-input-box input[type="text"], .bank-table .withdraw .wb-content .wp-left .wallet-input-box input[type="number"] {
+    width : 100%;
+    height : 40px;
+    border-radius: 3px;
+    border: solid 0.5px #555555;
+    background-color: #0a0a0a;
+    margin-bottom : 10px;
+    font-size: 13px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.bank-table .withdraw .wb-content .wp-left .wallet-input-box p {
+    font-size: 13px;
+    color: #ffffff;
+    margin-bottom : 10px;
+}
+
+.bank-table .withdraw .wb-content .wp-left .wallet-input-box p input[type="checkbox"] {
+    width : 23px;
+    opacity: 0;
+}
+
+.bank-table .withdraw .wb-content .wp-left .wallet-input-box p label {
+    position : relative;
+    color: #777777;
+}
+
+.bank-table .withdraw .wb-content .wp-left .wallet-input-box p label:before {
+    position: absolute;
+    width : 23px;
+    height : 23px;
+    top: 50%;
+    left : -27px;
+    content: '';
+    transform: translateY(-50%);
+    background-image: url(/public/img/common/btn-ck-agree-bf.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bank-table .withdraw .wb-content .wp-left .wallet-input-box p .xi-check-agree {
+    position : absolute;
+    width : 23px;
+    height : 23px;
+    left : -27px;
+    border: 1px solid #DDA800;
+    background-color: #F0B600;
+    color : #ffffff;
+    border-radius: 50%;
+    font-size : 15px;
+    text-align: center;
+    line-height: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.bank-table .withdraw .wb-content .wp-left .wallet-input-box .withdrawl-amount-warning {
+    color: #ff5b5b;
+}
+
+.bank-table .withdraw .wb-content .wp-left .wallet-input-box p>span {
+    font-size: 13px;
+    color: #ffffff;
+}
+
+.bank-table .withdraw .wb-content .wp-left .agree-box {
+    align-items: center;
+}
+
+.bank-table .withdraw .wb-content .wp-left .wallet-input-box .wallet-withdraw-agree {
+    text-align: center;
+    margin : 0 0 30px 0;
+}
+
+.bank-table .withdraw .wb-content .wp-left .wallet-input-box button {
+    width : 100%;
+    height : 55px;
+    border-radius: 6px;
+    border: solid 0.5px #ffffff;
+    background-color: transparent;
+    font-size: 17px;
+    font-weight: 500;
+    color : #fff;
+}
+
+.bank-table .withdraw .wb-content .wp-left .wallet-input-box .applyWithdraw {
+    border : none;
+    background-image: linear-gradient(to right, #f8db00 -23%, #f0b600);
+    color: #131415;
+}
+
+.bank-table .withdraw .wb-content .wp-left .total-price {
+    border-top : 1px solid #555;
+    border-bottom : 1px solid #555;
+    padding : 25px 1em;
+    display : flex;
+    flex-direction: column;
+    line-height : 25px;
+    margin-bottom : 40px;
+}
+
+.bank-table .withdraw .wb-content .wp-left .total-price p {
+    display : flex;
+    align-items: center;
+}
+
+.bank-table .withdraw .wb-content .wp-left .total-price span:nth-child(1) {
+    width : 40%;
+}
+
+.bank-table .withdraw .wb-content .wp-left .total-price span:nth-child(2) {
+    width : 60%;
+    text-align: right;
+    word-break: break-all;
+}
+
+.bank-table .withdraw .wb-content .wp-left .total-price p .color {
+    color: #f2bf00;
+}
+
+.bank-table .withdraw .wb-content .wp-left .total-price .middle {
+    position : relative;
+}
+
+.bank-table .withdraw .wb-content .wp-left .total-price .middle>label {
+    width: 100%;
+    word-break: break-all;
+    height: 100%;
+}
+
+.wp-left-qr {
+    display : flex;
+}
+
+.wallet-qr-name {
+    height: 100%;
+    overflow: hidden;
+}

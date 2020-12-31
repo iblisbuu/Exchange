@@ -1,0 +1,233 @@
+#main {
+    display: flex;
+}
+
+.sign-up-box > button {
+    width: 100%;
+    outline: none;
+    min-height: 56px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.15);
+    background-color: #bdbdbd;
+    border-color: #bdbdbd;
+    transition: all 300ms;
+    margin-top: 50px;
+}
+
+.sign-up-box > button.btn-yellow {
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.15);
+    background-color: #f0b600;
+    color: #ffffff;
+    border-color: #f0b600;
+}
+
+.sign-up-box > hr {
+    background-color: #d8d8d8;
+    margin: 44px 0;
+    height: 1px;
+    border: 0;
+}
+
+.sign-up-box > .sign-agree-box {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+    padding-bottom: 13px;
+}
+
+.sign-up-box > .sign-agree-box > .agree-all {
+    width: 100%;
+    display: inline-block;
+    border-bottom: 1px solid #ddd;
+    padding: 14px 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.sign-up-box > .sign-agree-box > div {
+    padding: 9px 16px;
+}
+
+.sign-up-box .common-input.alert {
+    border-color: #ff5b5b !important;
+}
+
+.sign-up-box .common-alert {
+    padding-left: 5px;
+}
+
+.sign-up-box .common-alert:before {
+    display: inline-block;
+    content: "\f071";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    top: 20px;
+    left: 20px;
+    margin-right: 5px;
+}
+
+.chk-box {
+    display: none;
+}
+
+.agree-all .chk-label {
+    font-weight: 500;
+}
+
+.chk-label {
+    font-weight: normal;
+    font-size: 16px;
+    color: #0a0a0a;
+    padding-left: 30px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.chk-label span {
+    font-size: 16px;
+    color: #777;
+    margin-left: 2px;
+}
+
+.chk-label button {
+    margin-left: auto;
+    color: #3b3b3b;
+    font-size: 14px;
+    border-bottom: 1px solid #3b3b3b;
+    background-color: transparent;
+}
+
+.chk-label:before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-flex;
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free" !important;
+    width: 22px;
+    height: 22px;
+    border-radius: 12px;
+    border: 1px solid #979797;
+    transition: background-color 300ms, border-color 300ms, color 300ms;
+    color: #f9f9f9;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+}
+
+.chk-box:checked + .chk-label:before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    border-color: #f0b600;
+    background-color: #f0b600;
+}
+
+.popup-ok {
+    padding: 50px !important;
+    width: 540px;
+    height: 580px;
+    position: absolute !important;
+}
+
+.popup-ok > .popup-head {
+    padding-bottom: 0 !important;
+    margin-bottom: 30px !important;
+}
+
+.popup-ok > .popup-head > h1 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #0a0a0a;
+    text-align: left;
+    margin-bottom: 14px;
+}
+
+.popup-ok > .popup-head > h1 > span {
+    color: #777;
+    margin-left: 5px;
+}
+
+.popup-ok > .popup-head > .popup-terms-content {
+    width: 100%;
+    height: 375px;
+    overflow-y: auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px 5px 20px 20px;
+    text-align: left;
+    font-size: 12px !important;
+    font-weight: normal;
+}
+
+.popup-btn button {
+    width: auto !important;
+    padding: 13px 40px !important;
+}
+
+.mCSB_inside > .mCSB_container {
+    margin-right: 0 !important;
+}
+
+.mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-color: #ccc !important;
+}
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    width: 4px !important;
+}
+
+.mCSB_container {
+    padding-right: 15px !important;
+}
+
+.mCS-dark.mCSB_scrollTools .mCSB_draggerRail{
+    background-color: transparent !important;
+}
+
+#mCSB_1_dragger_vertical{
+    min-height: 40px !important;
+}
+
+.common-alert-return > li {
+    position: relative;
+    padding-left: 22px;
+    line-height: 2.36;
+    color: #ff5b5b;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.common-alert-return > li:before {
+    position: absolute;
+    top: 50%;
+    left: 2px;
+    width: 10px;
+    text-align: center;
+    transform: translateY(-50%);
+    display: inline-block;
+    content: "\f00d";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #ff5b5b;
+    font-size: 14px;
+    margin-right: 8px;
+}
+
+.common-alert-return > li.valid {
+    color: #0a0a0a;
+}
+
+.common-alert-return > li.valid:before {
+    content: "\f00c";
+    color: #f0b600;
+}

@@ -1,0 +1,112 @@
+@media screen and (max-width: 768px) {
+    #main {
+        padding-bottom: 270px !important;
+    }
+
+    footer .wrap-wide {
+        padding: 0 !important;
+    }
+
+    footer {
+        min-height: 270px;
+        min-width: auto;
+        height: auto;
+        padding: 30px 16px;
+        background: #0a0a0a;
+    }
+
+    .footer-box, .ft-list {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .footer-box {
+        margin: 0 !important;
+        width: 100%;
+    }
+
+    .logo-box {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .ft-logo {
+        background: url('/public/img/common/logo-footer.png') no-repeat center;
+        background-size: contain;
+        width: 140px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .ft-mode {
+        margin-left: 0;
+    }
+
+    .ft-mode > .ft-title {
+        font-size: 13px;
+    }
+
+    .ft-mode .switch {
+        width: 50px;
+        height: 26px;
+    }
+
+    .slider:before {
+        height: 20px !important;
+        width: 20px !important;
+        left: 3px !important;
+        bottom: 3px !important;
+    }
+
+    .ft-list {
+        margin-top: 10px;
+        font-size: 13px !important;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .ft-list a {
+        color: #9c9c9c;
+        font-size: 13px !important;
+    }
+
+    .ft-list a:first-child {
+        padding-left: 0;
+    }
+
+    .ft-list a:after {
+        background: #4c4c4c;
+    }
+
+    .ft-list a:last-child:after {
+        width: 0;
+    }
+
+    .ft-list.contact {
+        margin-top: 12px;
+        margin-left: 0 !important;
+        margin-bottom: 27px;
+    }
+
+    .ft-copy {
+        width: 100%;
+        border-top: 1px solid #474747;
+        padding: 17px 0 5px;
+        text-align: left;
+        color: #777
+    }
+
+    .ft-list > .ft-title, .ft-mode .ft-title {
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
+    #main {
+        padding-bottom: 290px !important;
+    }
+}

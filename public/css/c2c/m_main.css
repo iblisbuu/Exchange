@@ -1,0 +1,680 @@
+#main {
+    background-color: #202022;
+    padding-bottom: 0 !important;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+#main > div {
+    width : 100%;
+    color : #ffffff;
+}
+
+.none {
+    display : none;
+}
+
+/* 상단 title */
+.account-section {
+    position: relative;
+    height : 65px;
+    color : #ffffff;
+    line-height: 65px;
+    text-align: center;
+    font-size: 18px;
+    background-color: #131314;
+    font-weight: 500;
+}
+
+.account-section .hd-back {
+    color : #fff;
+    position: absolute;
+    left : 9px;
+    top : 16.5px;
+    line-height : 0px;
+}
+
+.account-section .hd-back i {
+    font-size : 30px;
+}
+
+/* c2c 선택 메뉴 */
+.c2c-search-box {
+    height : 150px;
+    padding : 0 21px 0 16.5px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.c2c-search-box label {
+    position: absolute;
+    width : 115px;
+    height : 30px;
+    font-size: 25px;
+    left : 30px;
+    top : 40px;
+    display : block;
+    margin-top : 5px;
+    font-family: AppleSDGothicNeo;
+    font-weight: 500;
+}
+
+.c2c-search-box a {
+    position: absolute;
+    width : 130px;
+    height : 40px;
+    border : 0.5px solid #f0b600;
+    font-size : 14px;
+    color : #f0b600;
+    top : 40px;
+    right : 30px;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.c2c-search-box .search {
+    width : 100%;
+    height : 40px;
+    text-indent: 10px;
+    margin-top : 100px;
+    background-color: #1b1b1d;
+    border : 0.5px solid #333;
+    color : #777;
+    font-size: 16px;
+}
+
+.c2c-search-box .search::placeholder{
+    color : #777;
+    font-size: 16px;
+}
+
+.c2c-search-box .btn-search{
+    width : 21.5px;
+    height : 21px;
+    background-color: transparent;
+    background-image: url("/public/img/c2c/search.svg");
+    background-size: cover;
+    display : block;
+    position: absolute;
+    top : 109.5px;
+    right : 31px;
+    border : none;
+}
+
+/* 개인거래 내 메뉴 */
+.account-tap {
+    height : 53.5px;
+    font-size: 15px;
+    background-color: #1b1b1d;
+}
+
+.account-tap > ul {
+    width : 100%;
+    height : 100%;
+    border-bottom : 0.5px solid #333;
+    color : #777777;
+}
+
+.account-tap > ul > li{
+    width : 33.3333%;
+    height : 100%;
+    float : left;
+    line-height: 50px;
+    text-align: center;
+}
+
+.account-tap a {
+    width : 100% !important;
+    height : 100% !important;
+}
+
+.active{
+    color : #f0b600;
+    border-bottom : 1.5px solid #f0b600;
+}
+
+/* 코인 리스트 출력 */
+.c2c-lists-div {
+    height : auto;
+    background-color: #202022;
+}
+
+.c2c-lists-box {
+    width : 100%;
+    height : auto;
+    text-align: center;
+    font-size : 13px;
+}
+
+.lists-head > ul {
+    width : 100%;
+    height : 34.5px;
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom : 1px solid #333;
+}
+
+.lists-body > ul > li {
+    position: relative;
+    width : 100%;
+    /* height : 72px; */
+    justify-content: space-between;
+    align-items: center;
+    border-bottom : 1px solid #333;
+}
+
+.lists-head li, .lists-body li, .list>li {
+    flex-direction: column;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.lists-head li:nth-child(2), .list li:nth-child(2) {
+    width: 20%;
+}
+
+.lists-head li:nth-child(3), .list li:nth-child(3) {
+    width: 30%;
+    justify-content: flex-start;
+}
+
+.list li:nth-child(3) {
+    text-align: left !important;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.lists-head li:nth-child(4), .list li:nth-child(4) {
+    width: 30%;
+    justify-content: flex-end;
+    text-align: right !important;
+    line-height: inherit !important;
+}
+
+.lists-head li:nth-child(5), .list li:nth-child(5){
+    width: 20%;
+}
+
+.lists-ul {
+    width : 100%;
+    height : auto !important;
+}
+
+.lists-ul > li {
+    width : 100%;
+    height : 100%;
+}
+
+.lists-ul > li.no-list {
+    line-height : 72px;
+}
+
+.list {
+    width : 100%;
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0 !important;
+}
+
+.c2c-lists-box .lists-body .list.finish {
+    cursor: not-allowed;
+}
+
+.c2c-lists-box .lists-body .list.finish:before {
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    top: 0;
+    left: 0;
+    color: #fff;
+    z-index: 100;
+}
+
+body[data-lang='ko'] .c2c-lists-box .lists-body .list.finish:before {
+    content: '거래종료';
+}
+
+body[data-lang='en'] .c2c-lists-box .lists-body .list.finish:before {
+    content: 'Finished';
+}
+
+body[data-lang='ja'] .c2c-lists-box .lists-body .list.finish:before {
+    content: '終了';
+}
+
+.coin-img{
+    width : 25px;
+    height : 25px;
+    /* margin-top : 23.5px; */
+    margin-right : 5px;
+}
+
+.coin {
+    display: -webkit-inline-box;
+    margin-left : 5px;
+    position: relative;
+}
+
+.coin > div {
+    line-height: 0px !important;
+    width : 100%;
+    /* height : 42px; */
+}
+
+.td-main{
+    /* margin-top : 25px; */
+    width : 100%;
+    height : 21px;
+    display : block;
+}
+
+.c2c-lists-box .lists-body .list > li .td-main {
+    font-size: 13px;
+    color: #ffffff;
+    display: inline-block;
+    position: relative;
+    word-break: break-all;
+}
+
+.c2c-lists-box .lists-body .list > li .td-main.locked:after {
+    display: inline-block;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left : 5px;
+    color: #777777;
+    width: 10px;
+    height: 12px;
+    object-fit: contain;
+    background: url("/public/img/c2c/lock.svg") no-repeat center center;
+    vertical-align: -7px;
+}
+
+.td-sub {
+    color : #777;
+    display: unset;
+}
+
+/* 구매 비밀번호입력 */
+.closeBtn {
+    width : 23px;
+    height : 23px;
+    display : block;
+    position: absolute;
+    top : 13.5px;
+    right : 13.5px;
+    background-size: cover;
+}
+
+.popup-input {
+    width : 213px;
+    height : 40px;
+    border : 0.5px solid #979797;
+    border-radius : 3px;
+    text-indent : 15px;
+}
+
+.okPopup {
+    width : 150.5px !important;
+    height : 40px;
+    background-color: #f0b600;
+    border : 1px solid #dda800;
+    border-radius: 5px;
+    color : #fff;
+    font-size: 14px;
+    padding : 0px !important;
+}
+
+/* 구매 비밀번호입력 불일치 */
+.c2c-password-no-coincide {
+    width : 297px !important;
+    height : 177.5px;
+    background-color: #f4f4f4;
+    border-radius: 3px;
+    padding : 0 24px 0 27px;
+    box-sizing: border-box;
+    text-align: center;
+    z-index: 600;
+}
+
+.password-no-content {
+    width : 100%;
+    height : 102.5px;
+    padding-top : 55px;
+    box-sizing: border-box;
+    font-size : 15px;
+    font-weight: 500;
+    color : #0a0a0a;
+}
+
+.c2c-password-no-coincide button {
+    width : 150.5px;
+    height : 40px;
+    background-color: #ffffff;
+    border : 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    color : #0a0a0a;
+}
+
+/* 구매 */
+.c2c-detail-div {
+    height : auto;
+}
+
+.c2c-detail-div .c2c-details .c2c-type-box {
+    width : 100%;
+    height : 100px;
+    background-color: #202022;
+    color : #fff;
+    padding : 45px 0 0 21px;
+}
+
+.c2c-detail-div .c2c-details .c2c-type-box .my-type {
+    font-size: 25px;
+}
+
+.c2c-detail-div .c2c-details .c2c-type {
+    position: relative;
+    width : 100%;
+    height : 87px;
+    background-color: #29292b;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+
+.c2c-detail-div .c2c-details .c2c-type .my-c2c-type {
+    float : left;
+    margin-top : 32px;
+    margin-left : 16px;
+    font-size : 16px;
+}
+
+.c2c-detail-div .c2c-details .c2c-type .c2c-no {
+    margin-left : 16px;
+    margin-top : 32px;
+    font-size: 16px;
+    float : left;
+}
+
+.c2c-detail-div .c2c-details .c2c-type img {
+    position: absolute;
+    width : 35px;
+    height : 35px;
+    top : 25px;
+    right : 85px;
+}
+
+.c2c-detail-div .c2c-details .c2c-type .c2c-type-info {
+    position: absolute;
+    top : 22px;
+    right : 16px;
+    font-size: 16px;
+}
+
+.c2c-detail-div .c2c-details .c2c-type .c2c-type-info p {
+    color : #777;
+}
+
+.c2c-detail-box {
+    width : 100%;
+    height : auto;
+    background-color: #29292b;
+    border-bottom: 1px solid #333;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.c2c-detail-box .c2c-price-box {
+    width : 100%;
+    height : 73.5px;
+    padding : 39.5px 0 0 16.5px;
+    display: flex;
+    align-items: center;
+}
+
+.c2c-detail-box .c2c-price-box span {
+    font-size: 23px;
+    display : inline-block;
+}
+
+.c2c-detail-box .c2c-price-box p {
+    margin-left : 10px;
+}
+
+.c2c-detail-box .c2c-bar-box {
+    position: relative;
+    width : 100%;
+    padding : 15.5px 16px 0 16px;
+}
+
+.c2c-detail-box .c2c-bar-box .c2c-bar {
+    width : 100%;
+    height : 15px;
+    background-color: #171717;
+    border-radius: 7.5px;
+}
+
+.c2c-detail-box .c2c-bar-box .c2c-bar .percent-bar {
+    height : 15px;
+    border-radius: 7px;
+    background-image: linear-gradient(to bottom, #f8db00, #f0b600);
+}
+
+.c2c-detail-box .c2c-bar-box .c2c-bar-desc-box {
+    margin-top : 10px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    height: auto;
+    overflow: hidden;
+}
+
+.c2c-detail-box .c2c-bar-box .c2c-bar-desc-box > span {
+    width : 30%;
+    color : #f0b600;
+}
+
+.c2c-detail-box .c2c-bar-box .c2c-bar-desc-box p {
+    width : 70%;
+    text-align: right;
+    position: absolute;
+    right : 16px;
+    color : #777;
+}
+
+.c2c-detail-box .c2c-bar-box .c2c-bar-desc-box p > span {
+    color : #777;
+}
+
+.c2c-detail-box .c2c-quantity-box {
+    width : 100%;
+    margin-bottom : 40px;
+    padding : 15px 16.5px 0 0;
+    text-align: right;
+    width: 80%;
+    display: block;
+}
+
+.c2c-detail-box .c2c-quantity-box span {
+    font-size: 16px;
+    word-break: keep-all;
+}
+
+.c2c-detail-box .c2c-quantity-box .remain {
+    color : #f1ba00;
+}
+
+.c2c-detail-box .c2c-quantity-box .total {
+    color : #777;
+}
+
+.c2c-order-box {
+    width : 100%;
+    height : auto;
+    padding : 39.5px 16.5px 0 16px;
+    position: relative;
+}
+
+.c2c-order-box .c2c-order {
+    display : flex;
+    margin-bottom : 20px;
+}
+
+.c2c-order-box span, .c2c-order-box p {
+    font-size: 16px;
+    width: 70%;
+    word-break: break-all;
+}
+
+.c2c-order-box p {
+    position: absolute;
+    right : 16px;
+    text-align: right;
+}
+
+.c2c-order-box .c2c-quantity div {
+    position: relative;
+    width : 100%;
+    height : 40px;
+    background-color: #0a0a0a;
+    border : 0.5px solid #555;
+    margin-top : 10px;
+    line-height: 40px;
+}
+
+.c2c-order-box .c2c-quantity div input {
+    position: absolute;
+    height : 20.5px;
+    top : 9.5px;
+    right : 60px;
+    color : #fff;
+    text-align: right;
+    background-color: transparent;
+    border : none;
+    font-size : 16px;
+}
+
+.c2c-order-box .c2c-quantity em {
+    position: absolute;
+    right : 15px;
+    color : #777;
+    font-size : 16px;
+}
+
+.c2c-order-box .order-btn-div {
+    width : 100%;
+    height : 80px;
+    padding : 10px 0 0 0;
+    display : flex;
+}
+
+.c2c-order-box .order-btn-div button {
+    height : 40px;
+    margin-right : 4.5px;
+    background-color: transparent;
+    border : 0.5px solid #fff;
+    border-radius: 5px;
+    color : #fff;
+    font-size: 14px;
+    flex-grow: 1;
+}
+
+.c2c-order-box .order-btn-div button:nth-child(4){
+    margin : 0px;
+}
+
+.c2c-order-box > button {
+    width : 100%;
+    height : 55px;
+    border-radius: 6px;
+    background-image: linear-gradient(to bottom, #f8db00, #f0b600);
+    color : #131415;
+    font-size: 17px;
+}
+
+.c2c-desc-box {
+    width : 100%;
+    height : 192.5px;
+    padding : 40px 16px 0 16px;
+}
+
+.c2c-desc-box > span {
+    font-size: 14px;
+    display : block;
+    margin-bottom : 15px;
+}
+
+.c2c-desc-box > span:before {
+    content: '';
+    background: url("/public/img/c2c/attention.svg") no-repeat center center;
+    background-size: 100% 100%;
+    display: inline-block;
+    width: 16.5px;
+    height: 14.5px;
+    vertical-align: -3px;
+    margin-right : 7px;
+}
+
+.c2c-desc-box p {
+    margin-left : 0.5px;
+    font-size: 13px;
+    margin-bottom : 10px;
+}
+
+/* 팝업 텍스트 color */
+.color {
+    color: #0a0a0a !important;
+}
+
+/* c2c 모바일 팝업 */
+.c2c-mobile {
+    padding : 50px 25px 50px 25px !important;
+}
+
+.mobile {
+    width:343px !important;
+    height:290px;
+    padding:25px;
+}
+
+.mobile-head {
+    height:84.3px;
+    padding-top:35px;
+}
+
+.mobile-content {
+    padding-bottom:25px;
+}
+
+.mobile-btn {
+    height:40px;
+    padding:0px;
+}
+
+.mobile-padding {
+    padding : 0 40px;
+}
+
+@media screen and (max-width: 374px) {
+    .c2c-lists-box {
+        margin-bottom : 22px;
+    }
+
+    .c2c-password-no-coincide {
+        padding : 0 10px 0 10px;
+    }
+}

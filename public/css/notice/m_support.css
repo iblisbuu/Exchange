@@ -1,0 +1,67 @@
+/* 공지사항 내 메뉴 */
+.support-lnb {
+    width : 70%;
+    height : auto;
+    overflow: hidden;
+}
+
+.support-lnb li {
+    width : 25%;
+    float : left;
+    text-align: center;
+    padding : 30px 0 15px 0;
+}
+
+.support-lnb li .active {
+    text-decoration: underline;
+    text-underline-position: under;
+    color: #ffffff;
+}
+
+.support-lnb li a {
+    font-size: 14px;
+    color: #777777;
+}
+
+/* 공지사항 */
+.notice-content .support-tb {
+    width: 100%;
+    font-weight : normal;
+}
+
+.notice-content .support-tb, .notice-content .support-tb a {
+    color : #fff;
+    text-align: center;
+    word-break: keep-all;
+}
+
+.notice-content .support-tb thead th {
+    padding : 7.5px 0;
+    font-weight: normal;
+}
+
+.notice-content .support-tb .support-title {
+    text-align: left;
+    padding : 15px 0;
+}
+
+.notice-content .support-tb .support-date {
+    color: #777777;
+}
+
+.notice-content .support-tb tr {
+    border-top : 1px solid #333;
+}
+
+.notice-content .support-tb tbody tr:last-child {
+    border-bottom : 1px solid #333;
+}
+
+.notice-content .support-tb tbody tr .support-empty {
+    padding : 15px 0;
+}
+
+/* 페이징 */
+.paging {
+    margin-bottom: 20px;
+}

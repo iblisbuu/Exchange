@@ -1,0 +1,27 @@
+#main {
+    display: flex;
+    flex-direction: column;
+    background: #202022;
+}
+
+.login .member-box .member-btn span {
+    margin-top : 20px;
+    display : flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.login .member-box .member-btn span .link-a * {
+    font-size: 13px;
+    color: #979797;
+}
+
+.login .member-box .member-btn span .link-a:nth-child(1) a {
+    color: #f0b600;
+}
+
+.login .member-box .member-btn span .link-a:nth-child(2)::before {
+    content : '|';
+    color: #979797;
+    margin : 0 11px;
+}

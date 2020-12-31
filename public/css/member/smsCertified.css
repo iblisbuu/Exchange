@@ -1,0 +1,257 @@
+#main {
+    display: flex;
+}
+
+.sms-certified-box .common-title-desc {
+    margin: 9px 0 22px;
+}
+
+.sms-certified-box .common-input-group:last-child {
+    margin-bottom: 0;
+}
+
+.sms-certified-box form > button {
+    width: 100%;
+    outline: none;
+    min-height: 56px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.15);
+    background-color: #f0b600;
+    border-color: #f0b600;
+    color: #fff;
+    transition: all 300ms;
+    margin: 20px 0 13px;
+}
+
+.sms-certified-box form > button:disabled {
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.15);
+    background-color: #bdbdbd;
+    border-color: #bdbdbd;
+    color: #eeeeee;
+    cursor: auto;
+}
+
+.sms-certified-box form:last-child button {
+    margin-bottom: 0;
+}
+
+label[for='phoneNum'] {
+    margin-bottom: 16px !important;
+}
+
+.sms-send-area {
+    position: relative;
+    padding-left: 60px !important;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sms-send-area #smsCountry {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 100%;
+    border: 0;
+    background: #f4f4f4 url('/public/img/common/triangle.png') no-repeat 90% 50%; /* 화살표 모양의 이미지 */
+    cursor: pointer;
+    border-radius: 6px 0 0 6px;
+}
+
+.img-country {
+    transition: all 300ms;
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translate(-50%, -50%);
+    z-index: 200;
+    border: 1px solid #ddd;
+    width: 28px;
+}
+
+.sms-send-area #smsCountry .sms-option {
+    display: none;
+    transition: all 300ms;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    width: 195px;
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.15);
+    border: solid 1px #dddddd;
+    z-index: 500;
+}
+
+.sms-send-area #smsCountry .sms-option li:hover {
+    background-color: #f4f4f4;
+}
+
+.sms-send-area #smsCountry .sms-option > li {
+    padding: 10px;
+    height: 37px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.sms-send-area #smsCountry .sms-option > li > img {
+    margin-right: 6px;
+    border: 1px solid #ddd;
+    width: 28px;
+}
+
+.sms-send-area #smsCountry .sms-option > li > span {
+    margin-left: 5px;
+    font-weight: 500;
+    color: #777;
+    letter-spacing: 0.32px;
+}
+
+.sms-send-area #smsCountry:hover .sms-option, .sms-send-area #smsCountry:focus .sms-option, .sms-send-area #smsCountry:active .sms-option {
+    display: block;
+}
+
+.sms-country-num {
+    width: 50px;
+    border: 0;
+    border-right: 1px solid #ddd;
+    height: 100%;
+    margin-right: 5px;
+    cursor: auto;
+    font-size: 18px;
+    text-align: center;
+    color: #0a0a0a;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+#phoneNum {
+    border: 0;
+    font-size: 16px;
+    background-color: transparent;
+    width: 100%;
+    color: #0a0a0a;
+}
+
+#phoneNum::placeholder {
+    color: #aaa;
+}
+
+#certifiedSMS > .certified-input {
+    padding: 0 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#authNum {
+    padding: 14px 0;
+    border: 0;
+    height: 100%;
+    width: 60%;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+#authNum::placeholder {
+    color: #aaa;
+}
+
+.auth-time, .auth-time span {
+    font-size: 16px;
+    color: #9c9c9c;
+    font-weight: normal;
+}
+
+.common-input-group > .common-alert {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #e21d2c;
+}
+
+.common-title-desc {
+    font-size: 16px;
+    font-weight: 500 !important;
+    color: #0A0A0A !important;
+    margin-bottom: 16px;
+}
+
+.common-title-desc > em {
+    font-weight: 600;
+    color: #f0b600;
+    margin-right: 5px;
+}
+
+.sms-desc {
+    font-weight: normal;
+    font-size: 16px;
+    color: #777;
+}
+
+.common-input-group > label[for='phoneNum'] {
+    font-weight: normal !important;
+}
+
+.sms-alert-box {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-reSend {
+    font-size: 14px;
+    color: #515cff;
+    border-bottom: 1px solid #515cff;
+    background-color: transparent;;
+}
+
+.sms-desc-box {
+    margin-top: 20px;
+}
+
+.sms-desc-box li {
+    font-size: 14px;
+    color: #777;
+    line-height: 1.57;
+}
+
+.sms-alert-box .common-alert {
+    font-size: 14px;
+    color: #e21d2c;
+    font-weight: normal !important;
+}
+
+.change-sms-box {
+    align-items: flex-start;
+}
+
+.change-sms-box .common-yellow-box {
+    padding: 60px 80px;
+}
+
+span.otp-desc {
+    display: block;
+    margin: 20px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.common-input #otpNum {
+    border: 0;
+    width: 100%;
+}
+
+.common-input #otpNum::placeholder {
+    color: #aaaaaa;
+}
+
+#btnCheckOTP {
+    margin-top: 30px;
+}

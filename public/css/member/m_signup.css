@@ -1,0 +1,117 @@
+#main {
+    display: flex;
+    flex-direction: column;
+    background: #202022;
+}
+
+/* 회원가입 동의박스 */
+.signup .member-box .sign-agree-box {
+    margin-top : 37.5px;
+    margin-bottom : 27.5px;
+    width : 100%;
+    padding : 0 1em;
+}
+
+.signup .member-box .sign-agree-box>div {
+    position :relative;
+    border-radius: 6px;
+    border: solid 0.5px #4d4d4d;
+    background-color: #29292b;
+}
+
+.signup .member-box .sign-agree-box > div > div {
+    padding : 1.5em 0;
+    height : auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.signup .member-box .sign-agree-box > div > div * {
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.signup .member-box .sign-agree-box > div .agree-all {
+    border-bottom : 0.5px solid #4d4d4d;
+}
+
+.signup .member-box .sign-agree-box > div .agree > div {
+    width : 70%;
+    float : left;
+}
+
+.signup .member-box .sign-agree-box > div .chk-box {
+    position: absolute;
+    top: 50%;
+    left: 17px;
+    transform: translateY(-50%);
+    width : 23px;
+    height : 23px;
+    vertical-align: top;
+    opacity: 0;
+}
+
+.signup .member-box .sign-agree-box > div .chk-label {
+    position: relative;
+    left : 28px;
+}
+
+.signup .member-box .sign-agree-box > div .chk-label:before {
+    position: absolute;
+    left: -11px;
+    top: 0;
+    display: inline-block;
+    content: '';
+    width: 20px;
+    height: 20px;
+    border: 1px solid #989898;
+    border-radius: 50%;
+}
+
+.signup .member-box .sign-agree-box > div .chk-label p {
+    margin-left : 20px;
+}
+
+.signup .member-box .sign-agree-box > div i {
+    position : absolute;
+    width : 23px;
+    height : 23px;
+    left: -11px;
+    border: 1px solid #DDA800;
+    background-color: #F0B600;
+    color : #ffffff;
+    border-radius: 50%;
+    font-size : 15px;
+    text-align: center;
+    line-height: 22px;
+    top: 0%;
+}
+
+.signup .member-box .sign-agree-box > div button {
+    position : absolute;
+    background-color : transparent;
+    text-decoration: underline;
+    font-size: 13px;
+    color: #979797;
+    right : 17px;
+}
+
+/* 이용약관 팝업 */
+.popup-box {
+    height : 70% !important;
+    top : 20% !important;
+    transform: translate(-50%, 0%) !important;
+}
+
+.popup-box .closeBtn {
+    display : block !important;
+}
+
+.popup-box .popup-head {
+    height : 85%;
+    overflow-y: scroll;
+}
+
+.popup-box .popup-head .popup-terms-content {
+    touch-action: auto !important;
+}

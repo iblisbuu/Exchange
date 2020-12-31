@@ -1,0 +1,1014 @@
+body {
+    background-color: #0a0a0a !important;
+    color: #fff !important;
+}
+
+header {
+    border-bottom: 1px solid #333;
+}
+
+footer {
+    border-top: 1px solid #333;
+}
+
+.wrap-exchange {
+    width: 1345px;
+    margin: 0 auto;
+}
+
+#exchange {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.ex01 {
+    width: 400px;
+    border: 1px solid #555;
+    border-bottom: none;
+    background-color: #181818;
+    position: absolute;
+    top: 10px;
+    z-index: 200;
+}
+
+.ex02 {
+    padding-left: 410px;
+    flex: 1;
+}
+
+.ex02 .box {
+    margin-bottom: 10px;
+    border: 1px solid #555;
+    background-color: #181818;
+}
+
+/*ex01*/
+.searchBox {
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid #555;
+}
+
+.search-box {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.btn-search {
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    width: 15px;
+    height: 15px;
+    background: transparent url("/public/img/exchange/search.png") no-repeat 50% 50%;
+}
+
+.search {
+    width: 100%;
+    border: 1px solid #555;
+    background-color: #212121;
+    font-size: 12px;
+    color: #777;
+    padding: 6px 25px 6px 10px;
+    border-radius: 6px;
+}
+
+.search::placeholder {
+    color: #777;
+}
+
+.search-type-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-type-box > button {
+    width: 100%;
+    margin-right: 7px;
+    padding: 8px;
+    border-radius: 6px;
+    border: solid 1px #555555;
+    background-color: transparent;
+    color: #777;
+    font-size: 13px;
+    font-weight: 500;
+    outline: none;
+}
+
+.search-type-box > button.active {
+    border: solid 1px #f0b600;
+    color: #f0b600;
+}
+
+.search-type-box > button[data-search="bookmark"]:before {
+    width: 12px;
+    height: 12px;
+    margin-right: 3px;
+    content: '';
+    display: inline-block;
+    background: url("/public/img/exchange/star.png") no-repeat 50%;
+    background-size: contain
+}
+
+.search-type-box > button[data-search="bookmark"].active:before {
+    background: url("/public/img/exchange/star-on.png") no-repeat 50%;
+    background-size: contain
+}
+
+.search-type-box > button:last-child {
+    margin-right: 0;
+}
+
+.ex01-type {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #555;
+}
+
+.ex01-type > button {
+    outline: none;
+    width: 100%;
+    height: 45px;
+    border: 0;
+    background-color: transparent;
+    color: #777;
+    font-weight: 500;
+    position: relative;
+}
+
+.ex01-type > button.active {
+    color: #f0b600
+}
+
+.ex01-type > button.active:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #f0b600;
+}
+
+.tb-highlight {
+    width: 100%;
+    font-size: 12px;
+    border-bottom: 1px solid #555;
+}
+
+.tb-highlight thead {
+    border-bottom: 1px solid #555;
+}
+
+.tb-highlight thead td {
+    padding: 7px 0 10px;
+    color: #aaa;
+}
+
+.tb-highlight tbody tr, .tb-highlight tbody tr, .ex02 .tb-sign tr, .order-list-table-body tbody tr {
+    transition: background-color 300ms;
+}
+
+.tb-highlight tbody tr:hover, .tb-highlight tbody tr:active, .ex02 .tb-sign tr:hover, .order-list-table-body tbody tr:hover {
+    background-color: #353535;
+}
+
+.ex02 .tb-sign tr.head:hover {
+    background: none !important;
+}
+
+.tb-highlight tr td:first-child {
+    padding-left: 20px;
+    text-align: left;
+    padding-right: 5px;
+}
+
+.tb-highlight tr td {
+    text-align: right;
+}
+
+.tb-highlight tr td:last-child {
+    padding-right: 20px;
+}
+
+.tb-highlight .sort {
+    background-color: transparent;
+    border: 0;
+    color: #aaa;
+    font-size: 12px;
+}
+
+.tb-highlight .sort:after {
+    content: '';
+    display: inline-block;
+    margin-left: 5px;
+    width: 7px;
+    height: 9px;
+    background: url("/public/img/exchange/sort.png") no-repeat 50%;
+    background-size: 100%;
+}
+
+.tb-highlight tbody .hide {
+    display: none;
+}
+
+.coinBox tr.select {
+    background: #000 !important;
+}
+
+.tb-highlight tbody td {
+    height: 45px;
+    border-bottom: 1px solid #555;
+    font-size: 12px;
+}
+
+.tb-highlight tbody td:nth-child(2) {
+    text-align: left;
+}
+
+.tb-highlight tbody a {
+    color: #fff;
+}
+
+.tb-highlight td {
+    transition: color 0ms;
+}
+
+.bookmark {
+    cursor: pointer;
+    display: inline-block;
+    outline: none;
+    width: 12px;
+    height: 12px;
+    border: 0;
+    background: transparent url("/public/img/exchange/star.png") no-repeat 50%;
+    background-size: 100%;
+}
+
+.bookmark.active {
+    background-image: url("/public/img/exchange/star-on.png");
+}
+
+.tit {
+    line-height: 1.3;
+}
+
+.tit > a {
+    font-size: 13px;
+}
+
+.tit > em, .tit > em > span {
+    font-size: 12px;
+    color: #777;
+}
+
+/*ex02*/
+.coinInfo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 115px;
+}
+
+.coinInfo > div {
+    width: 50%;
+}
+
+.coinInfo01 {
+    padding: 15px 20px;
+    border-right: 1px solid #555;
+}
+
+.info {
+    position: relative;
+    z-index: 100;
+}
+
+.info button {
+    cursor: pointer;
+    display: inline-block;
+    outline: none;
+    width: 12px;
+    height: 12px;
+    border: 0;
+    background: transparent url("/public/img/exchange/info.png") no-repeat 50%;
+    background-size: 100%;
+    display: none;
+}
+
+.coinInfo01 .cTit {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.coinInfo01 .cTit > h2 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 5px;
+}
+
+.coinInfo01 .cTit > div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.coinInfo01 .cTit > div > * {
+    margin-right: 5px;
+}
+
+.coinInfo01 .cTit .cUnit {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.coinInfo01 .cValue {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.coinInfo01 .cValue .cMainValue {
+    font-size: 24px;
+    font-weight: 500;
+    margin-right: 5px;
+}
+
+.coinInfo01 .cValue .cSubValue {
+    color: #aaa;
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+
+.coinInfo01.decrease .cMainValue, .coinInfo01.decrease .cPercent {
+    color: #52aeff !important;
+}
+
+.coinInfo01.increase .cMainValue, .coinInfo01.increase .cPercent {
+    color: #ff5b5b !important;
+}
+
+.coinInfo02 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.coinInfo02 > div {
+    width: 50%;
+    height: 100%;
+}
+
+.coinInfo02 > div:first-child {
+    border-right: 1px solid #555
+}
+
+.coinInfo02 > div > div {
+    width: 100%;
+    height: 50%;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.coinInfo02 > div > div:first-child {
+    border-bottom: 1px solid #555;
+}
+
+.coinInfo02 > div > div span {
+    font-size: 13px;
+}
+
+.coinInfo02 > div > div em {
+    font-size: 15px;
+    margin-right: 4px;
+    color: #fff;
+}
+
+.coinInfo02 > div > div .font-sm {
+    font-size: 11px;
+}
+
+.coinInfo02 > div > div > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.chart {
+    height: 576px;
+}
+
+/*주문 현황*/
+.order-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    height: 1059px;
+}
+
+.order-section > .left {
+    width: 522px;
+    margin-right: 10px;
+    height: 100%;
+}
+
+.order-section > .right {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+}
+
+.order-section .box {
+    margin-bottom: 0;
+}
+
+.order-section > .right > .box {
+    width: 100%;
+}
+
+/*주문*/
+.order-area {
+    margin-bottom: 10px !important;
+}
+
+/* 미로그인 시 주문 */
+.order-area .order-content {
+    position: relative;
+}
+
+.order-area .order-content.not-member {
+    position: relative;
+}
+
+.order-area .order-content.not-member button[type='submit'] {
+    background-color: #636363;
+    border-color: #636363;
+    color: #ddd;
+}
+
+.order-area .order-content.not-member:after {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: not-allowed;
+    background-color: rgba(41, 41, 41, 0.2);
+    z-index: 100;
+}
+
+.order-area.buying .order-gnb > li.active, .order-area.buying .my-max-value {
+    color: #ff5b5b;
+}
+
+.order-area.buying .order-gnb > li.active:before {
+    background-color: #ff5b5b;
+}
+
+.order-area.selling .order-gnb > li.active, .order-area.selling .my-max-value {
+    color: #51adfe;
+}
+
+.order-area.selling .order-gnb > li.active:before {
+    background-color: #51adfe;
+}
+
+.ex02 .box-title {
+    padding: 13px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    border-bottom: 1px solid #555;
+}
+
+.ex02 .order-gnb {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ex02 .order-gnb > li {
+    width: 50%;
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid #555;
+    color: #777;
+    font-weight: 500;
+    position: relative;
+    cursor: pointer;
+}
+
+.ex02 .order-gnb > li:first-child {
+    border-right: 1px solid #555;
+}
+
+.ex02 .order-gnb > li.active {
+    padding-bottom: 16px;
+    border-bottom: 0;
+}
+
+.ex02 .order-gnb > li.active:before {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    display: inline-block;
+    content: '';
+}
+
+.ex02 .order-area-content {
+    padding: 0 10px 20px;
+    color: #aaa;
+    font-size: 13px;
+}
+
+.ex02 .order-area-content span {
+    font-size: 13px;
+    transition: all 0ms;
+}
+
+.ex02 .order-area-content > div {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.ex02 .my-max-value {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    border-bottom: 1px solid #333;
+}
+
+.ex02 .my-max-value em {
+    margin-right: 4px;
+    font-size: 15px;
+    transition: all 0ms;
+}
+
+.ex02 .order-price-tit {
+    font-weight: 500;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+
+.ex02 .order-price-ipt {
+    width: 100%;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 6px;
+    border: solid 1px #555555;
+    background-color: #212121;
+    position: relative;
+    text-align: right;
+    overflow: hidden;
+}
+
+.ex02 .order-price-ipt input {
+    border: 0;
+    width: 100%;
+    height: 100%;
+    color: #aaa;
+    font-size: 12px;
+    background-color: transparent;
+    text-align: right;
+    outline: none;
+    padding: 10px;
+}
+
+.ex02 .order-price-ipt input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.ex02 .order-price-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.ex02 .order-price-btn > button {
+    width: 30px;
+    height: 100%;
+    border-left: 1px solid #555;
+    background-color: #0a0a0a;
+    color: #777;
+    outline: none;
+}
+
+.ex02 .order-price-btn > button > i {
+    font-weight: bold;
+}
+
+.ex02 .order-price-area .order-price-ipt input {
+    padding-right: 70px;
+}
+
+.ex02 .order-price-select {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.ex02 .order-price-select > button {
+    width: 25%;
+    margin-right: 10px;
+    border-radius: 6px;
+    border: solid 1px #666666;
+    font-size: 13px;
+    font-weight: 500;
+    color: #aaaaaa;
+    background-color: transparent;
+    padding: 5px;
+}
+
+.ex02 .order-price-select > button:last-child {
+    margin-right: 0;
+}
+
+.order-amount-area p {
+    font-size: 13px;
+    color: #777;
+    margin-top: 10px;
+}
+
+.ex02 .order-total-area > p {
+    color: #777;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    margin-bottom: 5px;
+}
+
+.ex02 .order-total-area span {
+    font-size: 13px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.ex02 .order-total-area > p:not(.order-total) > span:not(.fee) * {
+    font-size: 0 !important;
+}
+
+.ex02 .order-total-area em {
+    margin-right: 5px;
+}
+
+.ex02 .order-total-area .order-total {
+    color: #fff;
+}
+
+.ex02 .order-total-area .order-total em {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.ex02 .order-submit {
+    padding: 11px;
+    transition: all 300ms;
+    outline: none;
+}
+
+.ex02 .order-submit:active {
+    transform: scale(0.98);
+}
+
+.order-submit.btn-red {
+    background-color: #ff5b5b;
+    border: 1px solid #ff5b5b
+}
+
+.ex02 .order-submit.btn-red:hover {
+    background-color: #ff3f44;
+}
+
+.order-submit.btn-skyblue {
+    background-color: #51adfe;
+    border: 1px solid #51adfe
+}
+
+.ex02 .order-submit.btn-skyblue:hover {
+    background-color: #2393fe;
+}
+
+/*체결 현황*/
+.ex02 .sign-area {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ex02 .sign-area > div {
+    width: 100%;
+}
+
+.ex02 .tb-sign-box {
+    width: 100%;
+    height: 414px;
+    overflow: hidden;
+    flex: 1;
+}
+
+.ex02 .tb-sign {
+    width: 100%;
+}
+
+.ex02 .tb-sign thead tr td {
+    padding: 8px 0;
+    color: #aaa;
+    font-size: 12px;
+    border-bottom: 1px solid #555;
+}
+
+.ex02 .tb-sign tr td:first-child {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.ex02 .tb-sign tr td {
+    text-align: right;
+    padding-right: 20px !important;
+}
+
+.ex02 .tb-sign tbody tr td {
+    height: 45px;
+    border-bottom: 1px solid #555;
+    font-size: 12px;
+}
+
+/*주문 현황*/
+.tb-status {
+    width: 100%;
+    overflow: hidden;
+}
+
+.tb-status thead tr th {
+    font-weight: normal;
+    text-align: center;
+    padding: 12px;
+    border-bottom: 1px solid #555;
+    border-right: 1px solid #555;
+    color: #aaaaaa;
+}
+
+.tb-status thead tr th:last-child {
+    border-right: 0;
+}
+
+.tb-status tbody tr td {
+    border-left: 1px solid #555;
+    border-bottom: 1px solid #333;
+    height: 45px;
+    text-align: right;
+    padding-right: 20px;
+    font-size: 13px;
+    position: relative;
+}
+
+.tb-status tbody tr td.status-order-price + td {
+    border-left: none;
+}
+
+.tb-status tbody.up tr td:last-child {
+    padding-left: 20px;
+    padding-right: 0;
+    text-align: left;
+}
+
+.tb-status tbody tr td:first-child {
+    border-left: 0;
+}
+
+.tb-status tbody tr .status-order-price > * {
+    display: block;
+}
+
+.tb-status tbody tr .status-order-price > em {
+    font-size: 13px;
+}
+
+.tb-status tbody tr .status-order-price > span {
+    font-size: 11px;
+    color: #777;
+}
+
+.tb-status tbody tr td > .bar, .tb-status tbody tr td > .amount {
+    position: absolute;
+    top: 50%;
+    transform: translate(0px, -50%);
+    -ms-transform: translate(0px, 50%);
+    height: 22px;
+}
+
+.tb-status tbody tr td > .bar {
+    transition: width 300ms;
+}
+
+.tb-status tbody tr td > .amount {
+    font-size: 13px;
+    z-index: 100;
+}
+
+.tb-status tbody.down tr td > .amount {
+    padding-right: 10px;
+    right: 0;
+    line-height: 22px;
+}
+
+.tb-status tbody.up tr td > .amount {
+    padding-left: 10px;
+    left: 0;
+    line-height: 22px;
+}
+
+.tb-status tbody.down tr td {
+    background-color: rgba(82, 174, 255, 0.05);
+}
+
+.tb-status tbody.up tr td {
+    background-color: rgba(255, 91, 91, 0.05);
+}
+
+.tb-status tbody.down tr td > .bar {
+    right: 0;
+    background-color: rgba(82, 174, 255, 0.14);
+}
+
+.tb-status tbody.up tr td > .bar {
+    left: 0;
+    background-color: rgba(255, 91, 91, 0.14);
+}
+
+.tb-status tbody.down tr td:last-child, .tb-status tbody.up tr td:first-child {
+    background-color: transparent;
+    border-bottom: 1px solid transparent;
+}
+
+.tb-status tbody.down tr:last-child td:last-child, .tb-status tbody.up tr:last-child td:first-child {
+    border-bottom: 1px solid #333;
+}
+
+.tb-status tbody.up tr:not(.not):hover, .tb-status tbody.down tr:not(.not):hover {
+    background-color: rgba(255, 255, 255, .04) !important;
+    cursor: pointer;
+}
+
+.tb-status tbody.total tr td {
+    padding: 10px 20px;
+}
+
+.tb-status tbody.total tr:last-child td {
+    border-bottom: 0;
+}
+
+.tb-status tbody.total tr td > * {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.3;
+}
+
+.tb-status tbody.total tr td span {
+    color: #aaa;
+}
+
+.my-order-list .ex01-type {
+    height: 54px;
+}
+
+.my-order-list .ex01-type > button {
+    height: 100%;
+}
+
+.order-list-table-head, .order-list-table-body table {
+    width: 100%;
+    text-align: center;
+}
+
+.order-list-table-head thead tr {
+    height: 38px;
+    border-bottom: solid 1px #555555;
+}
+
+.order-list-table-head thead th, .order-list-table-body tbody td {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.order-list-table-head thead th {
+    color: #aaa;
+}
+
+.order-list-table-body {
+    height: 468px;
+    overflow: hidden;
+}
+
+
+.order-list-table-body tbody tr {
+    height: 45px;
+    border-bottom: solid 1px #555555;
+}
+
+.order-list-table-body tbody tr:last-child {
+    border-bottom: none;
+}
+
+.order-list-table-body tbody td {
+    color: #fff;
+}
+
+.order-list-table-head thead th:first-child, .order-list-table-body tbody td:first-child {
+    padding-left: 15px;
+}
+
+.order-list-table-head thead th:last-child, .order-list-table-body tbody td:last-child {
+    padding-right: 15px;
+}
+
+.order-list-table-body button {
+    padding: 4px 15px;
+    border-radius: 6px;
+    border: solid 1px #555555;
+    background-color: transparent;
+    color: #777;
+    font-size: 13px;
+    font-weight: 500;
+    outline: none;
+}
+
+/*scroll custom*/
+.mCSB_inside > .mCSB_container {
+    margin-right: 0 !important;
+}
+
+.mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-color: #777 !important;
+}
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    width: 6px !important;
+}
+
+tr.no-data, tr.no-data td {
+    height: 100px;
+    text-align: center !important;
+    color: #777;
+    padding: 0 20px;
+    background: none !important;
+    font-size: 13px !important;
+    border: none !important;
+}
+
+tr.new-data {
+    animation: newDatas 500ms ease-in-out forwards;
+}
+
+@keyframes newDatas {
+    0% {
+        background: rgba(255, 255, 255, 0);
+    }
+    50% {
+        background: rgba(255, 255, 255, 0.3);
+    }
+    100% {
+        background: rgba(255, 255, 255, 0);
+    }
+}

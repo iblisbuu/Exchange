@@ -1,0 +1,422 @@
+/*IE*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .common-bg {
+        width: 100%;
+        display: flex;
+        background: #202022;
+        padding: 50px 0 90px;
+        justify-content: flex-start !important;
+    }
+}
+
+#main {
+    display: flex;
+}
+
+.account-section > .wrap-middle > .title-div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.account-section > .wrap-middle > .title-div h1 {
+    color: #ffffff;
+    font-size: 32px;
+}
+
+.account-section > .wrap-middle > .title-div p {
+    font-size: 16px;
+    font-weight: normal;
+    color: #aaaaaa;
+    margin-left: 6px;
+    position: relative;
+}
+
+.account-section > .wrap-middle > .title-div .calcDesc {
+    position: relative;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+}
+
+.account-section > .wrap-middle > .title-div .calcDesc .popup-box.balance {
+    position: fixed;
+    left: 0;
+    top: 30px;
+    transform: none;
+}
+
+/*IE*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .popup-box.balance {
+        position: absolute !important;
+    }
+}
+
+.account-section > .wrap-middle > .title-div .calcDescBtn {
+    margin-right: 9px;
+    cursor: pointer;
+    background-color: transparent;
+    background-image: url(/public/img/balance/information.png);
+    background-position: center;
+    background-size: 100%;
+    width: 25px;
+    height: 25px;
+    border: none;
+}
+
+
+.account-tap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.account-tap > div {
+    display: flex;
+}
+
+.account-tap a.active {
+    background-color: #f0b600;
+}
+
+.common-yellow-box {
+    display: flex;
+    flex-direction: column;
+    border-image-width: 6px 0 0 0 !important;
+    width: 1280px !important;
+    padding: 100px !important;
+    min-height: 978px;
+    font-weight: normal;
+}
+
+.common-yellow-box > h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0a0a0a;
+    margin-bottom: 20px;
+}
+
+.balance-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 23px;
+}
+
+.balance-title h1 {
+    font-size: 24px;
+}
+
+.balance-title p {
+    font-size: 14px;
+    color: #777777;
+}
+
+.balance-content {
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+.balance-table {
+    border-top: 3px solid #0a0a0a;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.balance-table thead tr {
+    height: 60px;
+    background-color: #f4f4f4;
+    border-bottom: solid 1px #dddddd;
+}
+
+.balance-table thead th {
+    font-size: 16px;
+    border-right: solid 1px #dddddd;
+    padding: 5px 26px;
+    font-weight: 500;
+}
+
+.balance-table thead th:last-child, .balance-table tbody td:last-child {
+    border-right: 0;
+}
+
+.balance-table tbody tr {
+    height: 82px;
+    border-bottom: solid 1px #dddddd;
+}
+
+.balance-table tbody td {
+    font-size: 13px;
+    border-right: solid 1px #dddddd;
+    padding: 5px 26px;
+    word-break: break-all;
+}
+
+.balance-table tbody td span {
+    font-size: 13px;
+}
+
+.balance-table .double-td > * {
+    display: block;
+}
+
+.margin-top {
+    margin-top: 57px;
+}
+
+/*자산현황*/
+.balance-table.asset-table {
+    text-align: right;
+}
+
+.balance-table.asset-table {
+    font-weight: bold;
+}
+
+.all-asset {
+    font-size: 26px !important;
+    color: #f0b600;
+}
+
+/*보유 현황*/
+.balance-table.retain-table {
+    text-align: left;
+}
+
+.balance-table.retain-table thead th button {
+    display: inline-block;
+    border: none;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 500;
+    width: 100%;
+    text-align: left;
+    position: relative;
+}
+
+.balance-table.retain-table thead th button:after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 14px;
+    background-image: url("/public/img/balance/table-arrow.png");
+    right: 0;
+    display: inline-block;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.balance-table.retain-table tbody td {
+    font-weight: 500;
+}
+
+.balance-table.retain-table tbody .coin-td img {
+    width: 38px;
+    height: 38px;
+}
+
+.balance-table.retain-table tbody .coin-td div {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.balance-table.retain-table tbody .coin-td span {
+    font-weight: bold;
+}
+
+.balance-table.retain-table tbody .coin-td p {
+    color: #aaaaaa;
+}
+
+.balance-table.retain-table tbody .amount-td {
+    font-weight: bold;
+}
+
+.balance-table.retain-table tbody .buy-td {
+    font-weight: 500;
+    color: #777777;
+    line-height: 1.86;
+}
+
+.balance-table.retain-table tbody .profit-td {
+    font-weight: bold;
+    line-height: 1.86;
+}
+
+/*내역 */
+.balance-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 23px;
+}
+
+#refreshBtn {
+    width: 120px;
+    height: 43px;
+    border-radius: 6px;
+    border: solid 1px #979797;
+    cursor: pointer;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+}
+
+#refreshBtn img {
+    margin-right: 7px;
+}
+
+/*select box*/
+.balance-select-boxes {
+    display: flex;
+    align-items: center;
+}
+
+.balance-select-boxes > div {
+    margin-right: 6px;
+    position: relative;
+}
+
+.balance-select-boxes .input-box > span {
+    width: 120px;
+    height: 43px;
+    border-radius: 6px;
+    border: solid 1px #979797;
+    cursor: pointer;
+    padding: 12px;
+    margin-bottom: 3px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.balance-select-boxes .input-box {
+    position: relative;
+}
+
+.balance-select-boxes .input-box:after {
+    position: absolute;
+    content: '';
+    width: 12px;
+    height: 8px;
+    background-image: url("/public/img/balance/select-arrow.png");
+    background-size: 100%;
+    background-position: center;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+}
+
+.balance-select-boxes ul {
+    display: none;
+    z-index: 500;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.15);
+    border: solid 1px #979797;
+    overflow: hidden;
+}
+
+.balance-select-boxes .input-box:hover ul {
+    display: block;
+}
+
+.balance-select-boxes ul li {
+    padding: 12px;
+    font-size: 14px;
+    color: #0a0a0a;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.balance-select-boxes ul li:hover {
+    background-color: #f4f4f4;
+}
+
+.history-table {
+    position: relative;
+    z-index: 100;
+    border-top: 3px solid #0a0a0a;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.history-table tr {
+    height: 50px;
+    border-bottom: solid 1px #dddddd;
+}
+
+.history-table thead th {
+    background-color: #f4f4f4;
+    font-size: 16px;
+    padding: 10px 18px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.history-table thead th span {
+    color: #aaa;
+    font-size: 12px;
+}
+
+.history-table tbody td {
+    font-size: 14px;
+    padding: 5px 18px;
+    text-align: center;
+    word-break: break-all;
+}
+
+
+.history-table .descIcon {
+    margin-left: 2px;
+    cursor: pointer;
+    background-color: transparent;
+    background-image: url(/public/img/balance/information.png);
+    background-position: center;
+    background-size: 100%;
+    width: 20px;
+    height: 20px;
+    border: none;
+    vertical-align: text-bottom;
+}
+
+.history-table .statusDesc {
+    display: inline-block;
+    height: 100%;
+
+    position: relative;
+}
+
+.history-table .statusDesc .popup-box.balance {
+    position: fixed;
+    left: 0;
+    top: 30px;
+    transform: none;
+    width: 560px;
+}
+
+.history-table .statusDesc .popup-box.balance em {
+    font-size: 16px;
+}
+
+.history-table .statusDesc .popup-box.balance p {
+    font-weight: normal;
+}
+
+.history-table .statusDesc .popup-content {
+    padding-bottom: 0;
+}
+
+.history-table tbody td.txid {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+}

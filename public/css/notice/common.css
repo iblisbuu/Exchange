@@ -1,0 +1,102 @@
+/*IE*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .common-bg {
+        width: 100%;
+        display: flex;
+        background: #202022;
+        padding: 50px 0 90px;
+        justify-content: flex-start !important;
+    }
+}
+
+#main {
+    display: flex;
+}
+
+.account-section > .wrap-middle > h1 {
+    color: #ffffff;
+    font-size: 32px;
+    text-align: left;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.account-tap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.account-tap > div {
+    display: flex;
+}
+
+.account-tap a.active {
+    background-color: #f0b600;
+}
+
+.common-yellow-box {
+    display: flex;
+    flex-direction: column;
+    border-image-width: 6px 0 0 0 !important;
+    width: 1280px !important;
+    padding: 100px !important;
+    min-height: 978px;
+    font-weight: normal;
+}
+
+.common-yellow-box > h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0a0a0a;
+    margin-bottom: 20px;
+}
+
+.notice-content {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.notice-admin {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.notice-href {
+    padding: 9px 30px;
+    border: 1px solid #979797;
+    border-radius: 6px !important;
+    width: auto !important;
+    height: auto !important;
+    font-size: 16px;
+    font-weight: 500;
+    color: #0a0a0a !important;
+    line-height: 24px !important;
+}
+
+.notice-etc-box {
+    position: relative;
+    margin-top: 20px;
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+}
+
+.notice-etc-box .paging {
+    margin-top: 0;
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.notice-etc-box .notice-href {
+    margin-top: 0;
+    position: absolute;
+    right: 0;
+    bottom: auto;
+    top: 50%;
+    transform: translateY(-50%);
+}

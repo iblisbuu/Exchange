@@ -1,0 +1,259 @@
+[
+    {
+        "name": "kornrunner/keccak",
+        "version": "1.0.3",
+        "version_normalized": "1.0.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/kornrunner/php-keccak.git",
+            "reference": "ad761f528f4d1e3ce378b8a0841e5f82c9973535"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/kornrunner/php-keccak/zipball/ad761f528f4d1e3ce378b8a0841e5f82c9973535",
+            "reference": "ad761f528f4d1e3ce378b8a0841e5f82c9973535",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=7.1.0",
+            "symfony/polyfill-mbstring": "^1.8"
+        },
+        "require-dev": {
+            "php-coveralls/php-coveralls": "^2.1",
+            "phpunit/phpunit": "~7"
+        },
+        "time": "2018-07-30T22:16:23+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "kornrunner\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Boris Momcilovic",
+                "homepage": "https://github.com/kornrunner/php-keccak"
+            }
+        ],
+        "description": "Pure PHP implementation of Keccak",
+        "keywords": [
+            "keccak",
+            "sha-3",
+            "sha3-256"
+        ]
+    },
+    {
+        "name": "linusu/bitcoin-address-validator",
+        "version": "v0.1.2",
+        "version_normalized": "0.1.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/LinusU/php-bitcoin-address-validator.git",
+            "reference": "60dd66e7be5e7f5127e65a581eb67aacb3fe553c"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/LinusU/php-bitcoin-address-validator/zipball/60dd66e7be5e7f5127e65a581eb67aacb3fe553c",
+            "reference": "60dd66e7be5e7f5127e65a581eb67aacb3fe553c",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2014-08-20T13:04:51+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "LinusU\\Bitcoin\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Linus Unnebäck",
+                "email": "linus@folkdatorn.se",
+                "homepage": "http://linusu.se/",
+                "role": "Developer"
+            }
+        ],
+        "description": "A simple, easy to use PHP Bitcoin address validator",
+        "homepage": "http://github.com/LinusU/bitcoin-address-validator",
+        "keywords": [
+            "address",
+            "bitcoin",
+            "validation",
+            "validator"
+        ]
+    },
+    {
+        "name": "phpgangsta/googleauthenticator",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/PHPGangsta/GoogleAuthenticator.git",
+            "reference": "505c2af8337b559b33557f37cda38e5f843f3768"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/PHPGangsta/GoogleAuthenticator/zipball/505c2af8337b559b33557f37cda38e5f843f3768",
+            "reference": "505c2af8337b559b33557f37cda38e5f843f3768",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3"
+        },
+        "time": "2019-03-20T00:55:58+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "classmap": [
+                "PHPGangsta/GoogleAuthenticator.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-4-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Michael Kliewe",
+                "email": "info@phpgangsta.de",
+                "homepage": "http://www.phpgangsta.de/",
+                "role": "Developer"
+            }
+        ],
+        "description": "Google Authenticator 2-factor authentication",
+        "keywords": [
+            "googleauthenticator",
+            "rfc6238",
+            "totp"
+        ]
+    },
+    {
+        "name": "psychob/ethereum-address-validator",
+        "version": "1.1.4",
+        "version_normalized": "1.1.4.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/psychob/ethereum-address-validator.git",
+            "reference": "70f83879253cb2e472908696dbe8c7ce5631183a"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/psychob/ethereum-address-validator/zipball/70f83879253cb2e472908696dbe8c7ce5631183a",
+            "reference": "70f83879253cb2e472908696dbe8c7ce5631183a",
+            "shasum": ""
+        },
+        "require": {
+            "kornrunner/keccak": "^1.0",
+            "php": "^7.1"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^7.5"
+        },
+        "time": "2019-06-27T08:38:05+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "PsychoB\\Ethereum\\": "./src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MPL-2.0"
+        ],
+        "authors": [
+            {
+                "name": "Andrzej Budzanowski",
+                "email": "kontakt@andrzej.budzanowski.pl"
+            }
+        ],
+        "description": "Validate etheruem address"
+    },
+    {
+        "name": "symfony/polyfill-mbstring",
+        "version": "v1.17.0",
+        "version_normalized": "1.17.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/polyfill-mbstring.git",
+            "reference": "fa79b11539418b02fc5e1897267673ba2c19419c"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/fa79b11539418b02fc5e1897267673ba2c19419c",
+            "reference": "fa79b11539418b02fc5e1897267673ba2c19419c",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "suggest": {
+            "ext-mbstring": "For best performance"
+        },
+        "time": "2020-05-12T16:47:27+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.17-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Polyfill\\Mbstring\\": ""
+            },
+            "files": [
+                "bootstrap.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Nicolas Grekas",
+                "email": "p@tchwork.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony polyfill for the Mbstring extension",
+        "homepage": "https://symfony.com",
+        "keywords": [
+            "compatibility",
+            "mbstring",
+            "polyfill",
+            "portable",
+            "shim"
+        ],
+        "funding": [
+            {
+                "url": "https://symfony.com/sponsor",
+                "type": "custom"
+            },
+            {
+                "url": "https://github.com/fabpot",
+                "type": "github"
+            },
+            {
+                "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                "type": "tidelift"
+            }
+        ]
+    }
+]

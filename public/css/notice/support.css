@@ -1,0 +1,103 @@
+.support-lnb {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.support-lnb li {
+    margin-right: 60px;
+    padding-top: 6px;
+    border-top: 4px solid transparent;
+}
+
+.support-lnb li > a {
+    font-size: 16px;
+    color: #aaa;
+    font-weight: bold;
+}
+
+.support-lnb li.active {
+    border-top: 4px solid #f0b600;
+}
+
+.support-lnb li.active > a {
+    color: #f0b600
+}
+
+.support-tb {
+    width: 100%;
+    border-top: 3px solid #0a0a0a;
+}
+
+.support-tb thead th {
+    font-size: 16px;
+    font-weight: 500;
+    color: #0a0a0a;
+    padding: 14px 0;
+    background: #f4f4f4;
+    border-bottom: 1px solid #ccc;
+}
+
+.support-tb thead tr th:first-child {
+    padding-left: 20px;
+    text-align: center;
+}
+
+.support-tb thead tr th:last-child {
+    padding-right: 20px;
+    text-align: left;
+}
+
+.support-tb tr td {
+    height: 50px;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 14px;
+    color: #0a0a0a;
+}
+
+.support-tb tbody tr td:last-child {
+    padding-left: 0;
+    padding-right: 20px;
+}
+
+.support-tb tr:not(.support-topfix):hover {
+    background: #fdfbeb;
+}
+
+.support-tb tr.support-topfix {
+    background: #fff9f9;
+}
+
+.support-tb tr.support-topfix .support-tag {
+    color: #ff5b5b;
+}
+
+.support-tb tr .support-title {
+    padding-left: 0;
+}
+
+.support-tb tr.support-topfix .support-title a {
+    font-weight: bold;
+}
+
+.support-tb .support-tag {
+    font-weight: bold;
+}
+
+.support-tb .support-date {
+    color: #777777;
+}
+
+.support-tb .support-title a {
+    display: inline-block;
+    width: 100%;
+}
+
+.support-empty {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center !important;
+}

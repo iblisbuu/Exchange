@@ -1,0 +1,139 @@
+#main {
+    display: flex;
+    flex-direction: column;
+    background: #202022;
+}
+
+.member-input-group {
+    justify-content: center;
+}
+
+/* 국가코드선택 */
+.sms-send-area {
+    position: relative;
+    margin : 0 16px;
+    padding-left: 40px !important;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 40px;
+    border: solid 0.5px #333333;
+}
+
+.sms-send-area #smsCountry {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 90px;
+    height: 100%;
+    border: 0;
+    cursor: pointer;
+    background-color: #29292b;
+}
+
+.img-country {
+    transition: all 300ms;
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translate(-50%, -50%);
+    z-index: 200;
+    border: 1px solid #ddd;
+    width: 30px;
+}
+
+.sms-send-area #smsCountry .sms-option {
+    display: none;
+    transition: all 300ms;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #29292b;
+    width: 90px;
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.15);
+    border: solid 0.5px #333333;
+    z-index: 500;
+}
+
+.sms-send-area #smsCountry .sms-option > li {
+    padding: 15px 10px 15px 15px;
+    height: 37px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: normal;
+}
+
+.sms-send-area #smsCountry .sms-option > li > img {
+    border: 1px solid #ddd;
+    width: 28px;
+}
+
+.sms-send-area #smsCountry .sms-option > li > span {
+    margin-left: 10px;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 0.32px;
+}
+
+.sms-country-num {
+    width: 50px;
+    border: 0;
+    height: 100%;
+    margin-right: 5px;
+    cursor: auto;
+    text-align: center;
+    color: #ffffff;
+    background-color: #29292b;
+    z-index: 1;
+}
+
+#phoneNum {
+    border: 0;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    text-indent: 7px;
+}
+
+#phoneNum::placeholder {
+    color: #777777;
+}
+
+/* sms인증 */
+.sms-certified .sms-certified-box .sms-common-box .sms-alert-box {
+    display : flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 21px;
+}
+
+.sms-certified .sms-certified-box .sms-common-box .sms-alert-box .common-alert {
+    font-size: 14px;
+    padding: 0 1em;
+}
+
+.sms-certified .sms-certified-box .sms-common-box .sms-alert-box .btn-reSend {
+    color: #167db3;
+    background-color: transparent;
+    text-decoration: underline;
+    text-underline-position: under
+}
+
+.sms-certified .sms-certified-box .sms-common-box .member-btn #btnCertified {
+    margin-bottom : 59.5px;
+}
+
+/* 유의사항 */
+.sms-certified .sms-certified-box .sms-common-box .sms-desc-box {
+    margin-top : 20px;
+    font-size: 13px;
+    color: #979797;
+    line-height: 1.77;
+    padding: 0 21px;
+}
+
+.common-alert {
+    padding: 0 2.5em;
+}

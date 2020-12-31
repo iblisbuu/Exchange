@@ -1,0 +1,84 @@
+#main {
+    display: flex;
+    flex-direction: column;
+    background: #202022;
+}
+
+/* 회원가입완료 버튼 */
+.welcome button {
+    position : relative;
+    width : 100%;
+    height : 50px;
+    border-radius: 6px;
+    background-color : #29292b;
+    font-size: 15px;
+    font-weight: 500;
+    color: #f0b600;
+    text-align: left;
+    text-indent: 20px;
+}
+
+.welcome button i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    color: #fff;
+}
+
+.welcome-title {
+    padding : 45px 21px 31.5px 21px;
+}
+
+.welcome-title img {
+    margin-bottom: 27px;
+}
+
+.welcome-title p {
+    font-family: AppleSDGothicNeo;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.42;
+    color: #ffffff;
+}
+
+.welcome-box {
+    margin : 0 16px;
+    border-radius: 6px;
+    border: solid 0.5px #4d4d4d;
+    background-color: #29292b;
+}
+
+.welcome-box button {
+    border-radius: 6px 6px 0 0;
+    border-bottom : 0.5px solid #4d4d4d;
+}
+
+.welcome-box .welcome-subBox {
+    padding : 1em;
+    color : #fff;
+}
+
+.welcome-box .welcome-subBox .welcome-desc {
+    line-height: 1.71;
+    margin-bottom : 1em;
+}
+
+.welcome-box .welcome-subBox .welcome-content * {
+    font-size : 13px !important;
+    line-height: 1.73;
+}
+
+.welcome-box .welcome-subBox .welcome-content strong {
+    font-weight: 500;
+}
+
+.welcome-box-later {
+    margin-top : 10px;
+    padding : 0 16px;
+    margin-bottom : 45.5px;
+}
+
+.welcome-box-later button {
+    border : 0.5px solid #4d4d4d;
+}

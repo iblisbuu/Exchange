@@ -1,0 +1,112 @@
+/*footer*/
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    min-width: 1280px;
+    height: 124px;
+    background-color: #101010;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrap-wide {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrap-wide > div {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    margin-left: 15px;
+}
+
+.ft-logo {
+    display: inline-block;
+    margin-right: 72px;
+    width: 156px;
+    height: 37px;
+}
+
+.ft-logo > img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.ft-list-box {
+    display: flex;
+}
+
+.ft-list {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 16px;
+}
+
+.ft-list.contact {
+    margin-left: 30px;
+}
+
+.ft-list > .ft-title {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.ft-list .ft-content {
+    position: relative;
+    color: rgba(255, 255, 255, .8);
+    font-weight: 300;
+    padding: 0 5px;
+}
+
+.ft-list .ft-content:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-40%);
+    width: 1px;
+    height: 60%;
+    background: #555;
+}
+
+.ft-list > .ft-content:last-child:after {
+    display: none;
+}
+
+.ft-copy {
+    font-size: 13px;
+    opacity: 0.5;
+    font-weight: 300;
+    text-align: right;
+}
+
+/*.ft-mode {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    margin-left: 20px;*/
+/*    min-width: 105px;*/
+/*}*/
+
+/*.ft-mode > .ft-title {*/
+/*    margin-right: 10px;*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*다크모드 버튼*/
+/*.switch {*/
+/*    width: 53px !important;*/
+/*    height: 25px !important;*/
+/*}*/
+
+/*.slider:before {*/
+/*    height: 20px !important;*/
+/*    width: 20px !important;*/
+/*    left: 3px !important;*/
+/*    bottom: 2px !important;*/
+/*}*/

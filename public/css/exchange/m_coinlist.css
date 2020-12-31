@@ -1,0 +1,288 @@
+#main {
+    background-color: #202022;
+    padding-bottom: 0 !important;
+
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 65px);
+}
+
+#exchange {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.ex01 {
+    height: 100%;
+    width: 100%;
+    border-bottom: none;
+    background-color: #181818;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*ex01*/
+.searchBox {
+    width: 100%;
+    padding: 8px 16px;
+    border-bottom: 2px solid #555;
+}
+
+.search-box {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.btn-search {
+    position: absolute;
+    top: 11px;
+    right: 10px;
+    width: 16px;
+    height: 16px;
+    background: transparent url("/public/img/exchange/search.png") no-repeat 50% 50%;
+    background-size: contain;
+}
+
+.search {
+    width: 100%;
+    border: 1px solid #555;
+    background-color: #0a0a0a;
+    font-size: 12px;
+    color: #777;
+    padding: 10px 25px 10px 10px;
+    border-radius: 5px;
+}
+
+.search::placeholder {
+    color: #777;
+}
+
+.search-type-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-type-box > button {
+    width: 100%;
+    margin-right: 7px;
+    padding: 10px;
+    border-radius: 6px;
+    border: solid 1px #555555;
+    background-color: transparent;
+    color: #777;
+    font-size: 14px;
+    font-weight: 500;
+    outline: none;
+}
+
+.search-type-box > button.active {
+    border: solid 1px #f0b600;
+    color: #f0b600;
+}
+
+.search-type-box > button[data-search="bookmark"]:before {
+    width: 14px;
+    height: 14px;
+    margin-right: 3px;
+    content: '';
+    display: inline-block;
+    background: url("/public/img/exchange/star.png") no-repeat 50%;
+    background-size: contain
+}
+
+.search-type-box > button[data-search="bookmark"].active:before {
+    background: url("/public/img/exchange/star-on.png") no-repeat 50%;
+    background-size: contain
+}
+
+.search-type-box > button:last-child {
+    margin-right: 0;
+}
+
+.ex01-type {
+    height: 47px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #555;
+}
+
+.ex01-type > button {
+    font-size: 14px;
+    outline: none;
+    width: 100%;
+    height: 45px;
+    border: 0;
+    background-color: transparent;
+    color: #777;
+    font-weight: 500;
+    position: relative;
+}
+
+.ex01-type > button.active {
+    color: #f0b600
+}
+
+.ex01-type > button.active:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #f0b600;
+}
+
+.coinList-area {
+    flex: 1;
+    width: 100%;
+    height: calc(100% - 47px);
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.tb-highlight {
+    width: 100%;
+    font-size: 12px;
+    border-bottom: 1px solid #555;
+    background-color: #202022;
+}
+
+.tb-highlight thead {
+    border-bottom: 2px solid #555;
+}
+
+.tb-highlight thead td {
+    padding: 7px 0 10px;
+    color: #aaa;
+}
+
+.tb-highlight tbody tr, .tb-highlight tbody tr, .ex02 .tb-sign tr, .order-list-table-body tbody tr {
+    transition: background-color 300ms;
+}
+
+.tb-highlight tbody tr:hover, .tb-highlight tbody tr:active, .ex02 .tb-sign tr:hover, .order-list-table-body tbody tr:hover {
+    background-color: #353535;
+}
+
+.ex02 .tb-sign tr.head:hover {
+    background: none !important;
+}
+
+.tb-highlight tr td:first-child {
+    padding-left: 16px;
+    text-align: left;
+    padding-right: 10px;
+}
+
+.tb-highlight tr td {
+    text-align: right;
+}
+
+.tb-highlight tr td:last-child {
+    padding-right: 16px;
+}
+
+.tb-highlight .sort {
+    background-color: transparent;
+    border: 0;
+    color: #aaa;
+    font-size: 12px;
+}
+
+.tb-highlight .sort:after {
+    content: '';
+    display: inline-block;
+    margin-left: 5px;
+    width: 7px;
+    height: 9px;
+    background: url("/public/img/exchange/sort.png") no-repeat 50%;
+    background-size: 100%;
+}
+
+.tb-highlight tbody .hide {
+    display: none;
+}
+
+.coinBox {
+    width: 100%;
+    height: calc(100% - 108px);
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.coinBox tr.select {
+    background: #000 !important;
+}
+
+.tb-highlight tbody td {
+    height: 60px;
+    border-bottom: 2px solid #333330;
+    font-size: 13px;
+    color: #fff;
+}
+
+.tb-highlight tbody td:nth-child(2) {
+    text-align: left;
+}
+
+.tb-highlight tbody a {
+    color: #fff;
+}
+
+.bookmark {
+    cursor: pointer;
+    display: inline-block;
+    outline: none;
+    width: 14px;
+    height: 14px;
+    border: 0;
+    background: transparent url("/public/img/exchange/star.png") no-repeat 50%;
+    background-size: 100%;
+}
+
+.bookmark.active {
+    background-image: url("/public/img/exchange/star-on.png");
+}
+
+.tit {
+    line-height: 1.3;
+}
+
+.tit > a {
+    font-size: 14px;
+}
+
+.tit > em {
+    font-size: 12px;
+    color: #777;
+}
+
+/*scroll custom*/
+
+.mCustomScrollbar {
+    flex: 1;
+    height: calc(100% - 40px);
+}
+
+.mCSB_inside > .mCSB_container {
+    margin-right: 0 !important;
+}
+
+.mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-color: #777 !important;
+}
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    width: 4px !important;
+}

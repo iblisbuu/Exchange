@@ -1,0 +1,76 @@
+.detail-box {
+    padding : 0 1.5em;
+}
+
+.detail-box .detail-header {
+    margin-top : 45px;
+    padding : 1em 0;
+    border-top : 1px solid #333;
+    border-bottom : 1px solid #333;
+    color: #ffffff;
+    display : flex;
+    text-align: center;
+}
+
+.detail-box .detail-header .detail-tag {
+    position: relative;
+    width : 25%;
+}
+
+.detail-box .detail-header .detail-tag span {
+    width : 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    font-size : 13px;
+}
+
+.detail-box .detail-header .detail-title {
+    width : 75%;
+    text-align: left;
+    font-size : 13px;
+}
+
+.detail-box .detail-body {
+    min-height : 450px;
+    border-bottom : 1px solid #333;
+    color : #fff;
+}
+
+.detail-box .detail-body .detail-write {
+    text-align: right;
+    color: #777777;
+    margin-right : 10px;
+    padding: 0.5em 0;
+    font-size : 13px;
+}
+
+.detail-box .detail-body .detail-content {
+    color: #ffffff;
+}
+
+.detail-box .detail-body .detail-content p {
+    font-size : 13px;
+}
+
+.detail-box .detail-body.no-exist {
+    color: #fff;
+    line-height : 450px;
+}
+
+.notice-etc-box {
+    padding : 30px 1.5em 50px 1.5em;
+}
+
+.notice-etc-box .notice-href {
+    width : 100%;
+    height : 55px;
+    border-radius: 6px;
+    color: #131415;
+    font-size: 17px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 55px;
+    background-image: linear-gradient(to right, #f8db00 -23%, #f0b600);
+}

@@ -1,0 +1,328 @@
+header {
+    width: 100%;
+    min-width: 1280px;
+    height: 70px;
+    background-color: #0a0a0a;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5000;
+    border-bottom: 1px solid transparent;
+}
+
+header a {
+    color: #fff;
+}
+
+header > .wrap-wide {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.hd-logo {
+    background: url('/public/img/common/logo.png') no-repeat center;
+    background-size: auto;
+    width: 180px;
+    height: 47px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-right: 40px;
+}
+
+.hd-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.hd-gnb {
+    color: #fff;
+    z-index: 200;
+}
+
+.hd-gnb > ul > li {
+    position: relative;
+    float: left;
+    margin-right: 40px;
+    padding: 10px 0;
+}
+
+.hd-gnb > ul > li > a {
+    letter-spacing: 0.5px;
+    line-height: 2.14;
+}
+
+.hd-gnb > ul > li.active > a {
+    color: #f0b600;
+    font-weight: 600;
+}
+
+.hd-gnb > ul > li:hover .hd-sub-gnb {
+    display: block;
+}
+
+.hd-sub-gnb {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: auto;
+    min-width: 120px;
+    padding: 20px 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-image-source: linear-gradient(214deg, #f9dc00, #f0b600 1%);
+    border-image-slice: 1;
+    background-color: #0a0a0a;
+}
+
+.hd-sub-gnb li {
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
+
+.hd-sub-gnb li a {
+    display: inline-block;
+    width: 100%;
+    color: rgba(255, 255, 255, .8);
+}
+
+.hd-sub-gnb li:last-child {
+    margin-bottom: 0;
+}
+
+.etc-lang {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 0;
+}
+
+.etc-lang:hover .hd-sub-gnb {
+    display: block;
+}
+
+.etc-lang .hd-sub-gnb {
+    width: auto;
+    padding: 10px;
+    min-width: 0;
+}
+
+.etc-lang .hd-sub-gnb li a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.etc-lang .hd-sub-gnb li a img {
+    margin-right: 6px;
+    width: 21px;
+}
+
+.hd-etc {
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.etc-member > * {
+    font-size: 13px;
+    letter-spacing: 0.46px;
+    margin-right: 40px;
+    padding: 10px 0;
+}
+
+.etc-member a.btn-yellow-border {
+    padding: 10px 23px;
+}
+
+.etc-member .member-manage {
+    position: relative;
+    display: inline-block;
+}
+
+.etc-member .member-manage:before {
+    font-family: xeicon;
+    content: "\e943";
+    position: absolute;
+    width: 10px;
+    height: 5px;
+    right: -14px;
+    top: 38%;
+    font-size: 11px;
+}
+
+.etc-member .member-manage:hover > .hd-sub-gnb {
+    display: block;
+    left: auto;
+    right: 0;
+    min-width: 275px;
+    padding: 0;
+    width: auto;
+}
+
+.etc-member .member-manage > .hd-sub-gnb li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    letter-spacing: normal;
+}
+
+.etc-member .member-manage > .hd-sub-gnb li:first-child {
+    border-bottom: 1px solid #353535;
+    margin: 0;
+}
+
+.etc-member .member-manage > .hd-sub-gnb span {
+    margin-left: 10px;
+    white-space: nowrap;
+}
+
+.etc-member .member-manage > .hd-sub-gnb span.member-account {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 3px;
+}
+
+.etc-member .member-manage > .hd-sub-gnb span strong {
+    margin-left: 15px
+}
+
+.etc-member .member-manage > .hd-sub-gnb a {
+    width: auto;
+    margin-left: 15px;
+    padding: 3px 8px;
+    border-radius: 4px;
+    border: solid 1px #999;
+    background-color: transparent;
+    color: #eee;
+    font-size: 13px;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.etc-support a {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    margin-right: 40px;
+    position: relative;
+}
+
+.sign-up-btn {
+    color: #c29b48;
+}
+
+/*.etc-support a:first-child:after, .member-manage:after {*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    right: -25px;*/
+/*    transform: translateY(-50%);*/
+/*    content: '';*/
+/*    display: inline-block;*/
+/*    width: 1px;*/
+/*    height: 11px;*/
+/*    opacity: 0.3;*/
+/*    background-color: #d8d8d8;*/
+/*}*/
+
+#lang {
+    margin-right: 20px;
+    position: relative;
+}
+
+#lang:after {
+    content: "\f0d7";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    display: inline-block;
+    font-size: 12px;
+    position: absolute;
+    transform: translateY(-50%);
+    right: -20px;
+    top: 50%;
+}
+
+/* 탑 공지 배너*/
+#top-notice {
+    width: 100%;
+    min-width: 1280px;
+    height: 65px;
+    background-color: #1a1a1a;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5000;
+    border-bottom: 1px solid #474747;
+}
+
+#top-notice > .wrap-top-notice {
+    display: flex;
+    align-items: center;
+}
+
+#top-notice .top-notice-box {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0 20px;
+    line-height: 1.64;
+}
+
+#top-notice .top-notice-box .top-notice-title {
+    font-weight: 500;
+    color: #d2d2d2;
+    margin-right: 8px;
+    position: relative;
+}
+
+#top-notice .top-notice-box .top-notice-title:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -25px;
+    width: 17px;
+    height: 17px;
+    background-image: url("/public/img/common/ic-notice.png");
+}
+
+#top-notice .top-notice-box .top-notice-date {
+    color: #7b7b7b;
+    font-weight: normal;
+}
+
+#top-notice button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    color: #D2D2D2;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+#top-notice button > i {
+    font-size: 17px;
+}
+
+.gnb-none.gnb-div {
+    display: none;
+}
+
+.menu-admin {
+    margin-right: 40px;
+    color: #ff8989;
+    font-size: 14px;
+}

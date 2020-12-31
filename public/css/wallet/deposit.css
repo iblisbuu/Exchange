@@ -1,0 +1,147 @@
+.wp-title {
+    text-align: left;
+    font-size: 16px !important;
+    font-weight: bold;
+    color: #0a0a0a;
+    margin-bottom: 20px;
+}
+
+.wp-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.wp-content > div {
+    width: 457px;
+}
+
+.wp-content > div:first-child {
+    margin-right: 50px;
+}
+
+.wp-deposit .wp-left {
+    border-radius: 6px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 63px 50px;
+}
+
+.wp-deposit .wp-left.padding {
+    padding: 35px 50px 45px;
+}
+
+.wp-deposit .wp-left p {
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.wp-deposit .wp-left button {
+    box-shadow: none;
+    padding: 6px 0;
+    font-size: 13px;
+    font-weight: 500;
+    border: 1px solid #dda800;
+}
+
+.wp-deposit .wp-right {
+    text-align: left;
+}
+
+.wp-deposit .wp-right p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #0a0a0a;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.wp-deposit .wp-right p img {
+    margin-right: 5px;
+}
+
+.wp-deposit .wp-right ul li {
+    position: relative;
+    padding-left: 7px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.wp-deposit .wp-right ul li:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '-';
+    display: inline-block;
+}
+
+/*QR 코드 비트코인 입금 주소*/
+.wallet-address-div:first-child {
+    margin-bottom: 30px;
+}
+
+.wallet-address-title {
+    margin-bottom: 10px;
+}
+
+.wallet-loading {
+    width: 150px;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    overflow: hidden;
+    border-radius: 6px;
+    margin: 0 auto;
+    min-height: 150px;
+    display: inline-block;
+}
+
+.wallet-loading.two {
+    margin: 0 12.5px;
+}
+
+.wallet-qr-name {
+    width:100%;
+    padding-top: 10px;
+}
+
+.wallet-qr-name > span {
+    display: block;
+    float:left;
+    width:50%;
+    text-align: center;
+}
+
+
+.wallet-loading img {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    object-fit: contain;
+}
+
+.wallet-address-input-box {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.wallet-address-input-box > button {
+    padding: 6px 20px !important;
+}
+
+.wallet-address-input-box input {
+    text-align: center;
+    padding: 6px;
+    height: 100%;
+    width: 60%;
+    flex: 1;
+    margin-right: 7px;
+    font-size: 12px;
+    color: #777;
+    border: 1px solid #979797;
+    background-color: #f4f4f4;
+    border-radius: 6px
+}

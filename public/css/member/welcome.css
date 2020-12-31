@@ -1,0 +1,115 @@
+#main {
+    display: flex;
+}
+
+.welcome .common-title {
+    position: relative;
+    font-weight: normal;
+    display: inline;
+}
+
+.welcome .common-title > strong {
+    font-size: 30px;
+}
+
+.welcome .common-title .title-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -30%);
+}
+
+.welcome hr {
+    background-color: #ddd;
+    margin: 40px -83px;
+    height: 1px;
+    border: 0;
+}
+
+.welcome button {
+    min-height: 56px;
+    border-radius: 6px;
+    padding: 16px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.welcome button i {
+    font-size: 12px;
+}
+
+.welcome button.btn-gray {
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.15);
+    border: solid 1px #dddddd;
+    background-color: #ffffff;
+    color: #777777;
+}
+
+.welcome-box {
+    border-radius: 6px 6px 0 0;
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.15);
+    border: solid 1px #dddddd;
+    margin-bottom: 20px;
+}
+
+.welcome-box button {
+    box-shadow: none;
+    border-radius: 6px 6px 0 0;
+}
+
+.welcome-box .welcome-subBox {
+    padding: 30px;
+}
+
+.welcome-desc {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.69;
+    color: #0a0a0a;
+}
+
+.welcome-desc > strong {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.welcome-content {
+    margin: 25px 0 0;
+}
+
+.welcome-content > li {
+    margin-bottom: 18px;
+    font-size: 14px;
+    color: #333;
+    font-weight: normal;
+    line-height: 1.81;
+    padding-left: 20px;
+    position: relative;
+}
+
+.welcome-content > li:before {
+    content: '';
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    border-radius: 10px;
+    border: 3px solid #aaaaaa;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(50%);
+}
+
+.welcome-content > li > strong {
+    font-size: 16px;
+    font-weight: 500;
+    color: #0a0a0a;
+}
+
+.welcome-content > li:last-child {
+    margin-bottom: 0;
+}

@@ -1,0 +1,50 @@
+#main {
+    display: flex;
+    height: 100%;
+}
+.common-bg{
+    align-items: flex-start;
+}
+
+.common-title {
+    margin-bottom: 9px !important;
+}
+
+.common-title-desc {
+    margin-bottom: 20px !important;
+}
+
+.step-desc {
+    font-size: 16px;
+    color: #0a0a0a;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.step-desc em {
+    color: #f0b600;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.alert-message {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #e21d2c;
+}
+
+button[type="submit"] {
+    height: 56px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    background-color: #f0b600;
+    color: #ffffff;
+}
+
+button[type="submit"]:disabled {
+    background-color: #bdbdbd;
+    color: #eeeeee;
+}

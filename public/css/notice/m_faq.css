@@ -1,0 +1,204 @@
+/* 자주묻는질문 검색창 */
+.search-div {
+    padding: 2em 1em 0 1em;
+}
+
+.search-div .search-box {
+    width : 100%;
+    height : 45px;
+    border: solid 0.5px #333333;
+    background-color: #1b1b1d;
+    display : flex;
+}
+
+.search-div .search-box input[type="text"] {
+    width : 90%;
+    height : 100%;
+    background-color: transparent;
+    text-indent: 15px;
+    border : none;
+    color : #fff;
+}
+
+.search-div .search-box .btn-search {
+    position : relative;
+    width : 10%;
+    height : 100%;
+    background-color: transparent;
+}
+
+.search-div .search-box .btn-search img {
+    position : absolute;
+    width : 21.5px;
+    top : 50%;
+    left : 50%;
+    transform :translate(-50%, -50%);
+}
+
+h1 {
+    margin-top : 2em !important;
+    padding : 0 2em !important;
+    color: #ffffff;
+    font-family: AppleSDGothicNeo;
+    font-size: 15px;
+    font-weight: 500 !important;
+}
+
+.notice-content {
+    margin-top : 7px;
+}
+
+.notice-content .faq-box .faq-header {
+    padding : 0 1em;
+    font-family: AppleSDGothicNeo;
+    font-size: 25px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.notice-content .faq-box .faq-body {
+    margin-top : 30px;
+}
+
+.notice-content .faq-box .faq-body.search-body {
+    margin-top : calc(2em-7px);
+    border-bottom : 1px solid #333;
+}
+
+.notice-content .faq-box .faq-body.search-body .faq-li:last-child {
+    border-bottom : 0px;
+}
+
+.notice-content .faq-box .faq-body .faq-li {
+    border-top : 1px solid #333;
+    width : 100%;
+    padding : 2em 10vw;
+    display : block;
+    height : auto;
+    overflow: hidden;
+    font-size: 13px;
+    color : #fff !important;
+    display : none;
+    background-color: #1b1b1d;
+}
+
+.notice-content .faq-box .faq-body .faq-li:last-child {
+    border-bottom : 1px solid #333;
+}
+
+.notice-content .faq-box .faq-body .faq-li * {
+    width : 100% !important;
+    color : #fff !important;
+    font-size: 13px;
+    line-height: 1.73;
+}
+
+.notice-content .faq-box .faq-body .faq-q {
+    display : flex;
+    padding : 1em 1em;
+    border-top : 1px solid #333;
+}
+
+.notice-content .faq-box .faq-body .faq-q .faq-ico {
+    position : relative;
+    width : 13%;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: #f0b600 !important;
+}
+
+.notice-content .faq-box .faq-body .faq-q .faq-ico:before {
+    content : '';
+    background: url('/public/img/faq/fnq.svg') center no-repeat;
+    display: block;
+    width: 16.5px;
+    height: 18.5px;
+    background-size: contain;
+    position: absolute;
+    top : 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.notice-content .faq-box .faq-body .faq-q span:nth-child(2) {
+    width : 78%;
+    font-size: 13px;
+    color : #fff;
+    word-break: break-word;
+}
+
+.notice-content .faq-box .faq-body .faq-q i {
+    font-size : 25px;
+    color : #fff;
+    position : absolute;
+    right : 0.5em;
+    top : 50%;
+    transform : translateY(-50%);
+}
+
+.notice-content .search-title {
+    padding : 0 1em;
+    color : #fff;
+    font-size : 17px;
+}
+
+.notice-content .search-title * {
+    font-size : 17px;
+}
+
+hr {
+    margin : 0;
+    border : none;
+    height : 1px;
+    background-color: #333;
+}
+
+/* 최근 검색 결과 */
+.recent-search-box {
+    border-top: 1px solid #333;
+    padding : 2em 2em;
+}
+
+.recent-search-box * {
+    color : #fff;
+}
+
+.recent-search-box>div {
+    padding-bottom : 1em;
+}
+
+.recent-search-box .recent-word-list .recent-search {
+    display : flex !important;
+    padding-bottom : 1em;
+}
+
+.recent-search-box>div .recent-search-ico {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #484848;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.recent-search-box>div .recent-search-ico>div:nth-last-child(1) {
+    position: absolute;
+    width: 1px;
+    height: 5px;
+    background-color: #484848;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 4px;
+}
+
+.recent-search-box>div .recent-search-ico>div:nth-last-child(2) {
+    position: absolute;
+    width: 1px;
+    height: 5px;
+    background-color: #484848;
+    transform: rotate(60deg);
+    left: 11px;
+    top: 5px;
+}

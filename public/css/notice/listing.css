@@ -1,0 +1,86 @@
+.account-section > .wrap-middle > .title-div {
+    max-width: 1280px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.account-section > .wrap-middle > .title-div h1 {
+    color: #ffffff;
+    font-size: 32px;
+    min-width: 100px;
+}
+
+.account-section > .wrap-middle > .title-div p {
+    font-size: 16px;
+    font-weight: normal;
+    color: #aaaaaa;
+    margin-left: 15px;
+}
+
+.common-yellow-box > h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.listing-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px 70px;
+    border-top: 3px solid #0a0a0a;
+    border-bottom: 1px solid #cccccc;
+}
+
+.listing-content .listing-input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.listing-content .listing-input-group:last-child {
+    margin-bottom: 0;
+}
+
+.listing-content .listing-input-group span {
+    width: 180px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #0a0a0a;
+}
+
+.listing-content .listing-input-group input {
+    width: 430px;
+    height: 43px;
+    border-radius: 6px;
+    border: solid 1px #dddddd;
+    background-color: transparent;
+    padding: 12px;
+    font-size: 14px;
+}
+
+.listing-content .listing-input-group input::placeholder {
+    font-size: 14px;
+    color: #aaaaaa;
+}
+
+.listing-buttons {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 20px 0 50px;
+}
+
+.listing-buttons .btn {
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.listing-buttons #listing-cancel-btn {
+    position: absolute;
+    right: 0;
+    border-radius: 6px;
+    border: solid 1px #979797;
+    background: transparent;
+}

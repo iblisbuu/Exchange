@@ -1,0 +1,13 @@
+#main {
+    display: flex;
+    flex-direction: column;
+    background: #202022;
+}
+
+.member-input-group {
+    justify-content: center;
+}
+
+.common-alert {
+    padding: 0 2.5em;
+}

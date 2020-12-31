@@ -1,0 +1,92 @@
+/*페이징*/
+.paging {
+    position: unset;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paging ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paging li {
+    margin-right: 5px;
+    width: 36px;
+    height: 36px;
+}
+
+.paging li:last-child {
+    margin-right: 0;
+}
+
+.paging a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    color: #979797;
+    border-radius: 12px;
+}
+
+.paging li.active a {
+    background-color: #f0b600;
+    color: #fff;
+}
+
+.paging .page-arrow a {
+    border-radius: 12px;
+    border: solid 0.5px #aaaaaa;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.paging .page-arrow.double-prev a:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 14px;
+    height: 10px;
+    background: url("/public/img/common/arrow-left.svg") repeat-x 0 center;
+}
+
+.paging .page-arrow.prev a {
+    background: url("/public/img/common/arrow-left.svg") no-repeat center;
+}
+
+.paging .page-arrow.next a {
+    background: url("/public/img/common/arrow-right.svg") no-repeat center;
+}
+
+.paging .page-arrow.double-next a:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 14px;
+    height: 10px;
+    background: url("/public/img/common/arrow-right.svg") repeat-x 0 center;
+}
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
+    .paging li {
+        margin-right: 3px;
+        width: 31px;
+        height: 31px;
+    }
+
+    .paging a {
+        width: 31px;
+        height: 31px;
+        line-height: 31px;
+    }
+}

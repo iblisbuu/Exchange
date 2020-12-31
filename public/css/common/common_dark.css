@@ -1,0 +1,144 @@
+.common-yellow-box {
+    background-color: #151515 !important;
+    box-shadow: 5px 5px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.common-input-group > .common-input, .search-box input, .search-box {
+    background: #202022 !important;
+    border-color: #373738 !important;
+    color: #999;
+}
+
+.common-input-group > label, .chk-label, .sign-up-box > button, .common-title {
+    color: #fff !important;
+}
+
+.common-input-group > .common-input:focus {
+    border: 1px solid #f0b600 !important;
+}
+
+.login-box > .link-box, .certified-alert {
+    background: #202022 !important;
+}
+
+.login-box > .link-box > .link-desc, .certified-alert {
+    color: #999 !important;
+}
+
+.login-box > .link-box > .link-a > a {
+    color: #fff !important;
+}
+
+.sign-up-box > .sign-agree-box, .sign-up-box > .sign-agree-box > .agree-all {
+    border-color: #373738 !important;
+}
+
+.sign-up-box > hr {
+    background-color: #373738 !important;
+}
+
+.sign-up-box > button, .email-certified-box > button, .welcome button.btn-gray, .sms-certified-box button:disabled {
+    background: #202022 !important;
+    border-color: #373738 !important;
+    color: #aaa !important;
+    border: 0;
+}
+
+button.btn-yellow {
+    background: #f0b600 !important;
+    color: #fff !important;
+    border: none;
+}
+
+.chk-label a {
+    color: #1d82da;
+}
+
+.chk-label:before {
+    background-color: #202022 !important;
+    border-color: #373738 !important;
+    color: #202022 !important;
+}
+
+.chk-box:checked + .chk-label:before {
+    background-color: #444 !important;
+    color: #fff !important;
+}
+
+.common-alert-return > li.valid, .welcome-desc, .welcome-desc > strong, .welcome-content > li, .welcome-content > li > strong {
+    color: #fff;
+}
+
+.sms-country-num {
+    color: #fff;
+}
+
+#phoneNum, #authNum {
+    color: #fff;
+}
+
+.sms-send-area #smsCountry {
+    background-color: #2b2b2b;
+}
+
+.sms-send-area #smsCountry .sms-option {
+    background-color: #1f1f1f;
+    border: 1px solid #3e3e3e;
+}
+
+.sms-send-area #smsCountry .sms-option li:hover {
+    background-color: #333333;
+}
+
+.sms-certified-box .common-input-group > .common-alert {
+    color: #ff5b5b;
+}
+
+.wm-border-right td, .wallet-table, .wallet-table th, .wallet-table thead, .wallet-bank .wallet-table tr td, .wallet-table tbody tr {
+    color:#fff;
+    border-color:#373738;
+}
+
+.wallet-table {
+    border-color:#5f5f5f;
+}
+
+.common-yellow-box h2, .wp-deposit .wp-right p, .wallet-input-box span, .wp-withdraw .wp-bottom p {
+    color:#fff;
+}
+
+.wallet-table th {
+    background-color: #424242;
+}
+
+.wallet-bank .wallet-table .wb-btn-box button, .wallet-bank .wallet-table .wb-btn-box div {
+    color:#888;
+    border-color:#373738;
+    background-color: #202022;
+}
+
+.applyWithdraw:disabled {
+    background-color: #373738;
+    border-color:#373738;
+    color:#999;
+}
+
+.wallet-bank .wallet-table .wb-btn-box button.active {
+    background-color: #424242;
+    border-color:#424242;
+}
+
+.wb-content {
+    background:#252525;
+}
+
+.wp-deposit .wp-left, .wp-withdraw .wp-left, .wp-withdraw .wp-left hr {
+    background-color: #202022;
+    border-color:#404040 !important;
+}
+
+.wallet-address-input-box input, .wp-withdraw .wallet-input-box input {
+    background: #353535;
+    border-color:#484848;
+    color:#999;
+}

@@ -1,0 +1,606 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap&subset=korean);
+@import url(//fonts.googleapis.com/earlyaccess/notosansjp.css);
+@import url(//fonts.googleapis.com/css?family=Droid+Sans);
+
+* {
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: 'Noto Sans KR', 'Noto Sans JP';
+    transition: color 300ms, border-color 300ms, background 300ms;
+}
+
+html {
+    overflow-y: scroll;
+    overflow-x: auto;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-size: 14px;
+    height: 100%;
+}
+
+body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button, select {
+    margin: 0;
+    padding: 0
+}
+
+body, input, textarea, select, button, table {
+    font-size: 14px;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    min-width: 1280px;
+    background-color: #f3f3f3;
+    color: #010101;
+    font-weight: 300;
+    padding-top: 70px;
+}
+
+input, button {
+    font-family: 'Noto Sans KR', 'Noto Sans JP';
+}
+
+button {
+    cursor: pointer;
+    border: 0;
+}
+
+img, fieldset {
+    border: 0
+}
+
+ul, ol {
+    list-style: none
+}
+
+em, address {
+    font-style: normal
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #010101;
+}
+
+table {
+    border-collapse: collapse
+}
+
+a, p, span, h1, h2, h3, h4, h5, h6 {
+    -webkit-transform: skew(-0.1deg);
+    -ms-transform: skew(-0.1deg);
+    transform: skew(-0.1deg);
+}
+
+h1 {
+    font-weight: bold;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/*IE*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    br { font-family:dotum;} /*IE에서 br태그가 깍두기 모양으로 깨지는걸 방지*/
+}
+
+:focus {
+    outline: none;
+}
+
+.droid {
+    font-family: 'Droid Sans';
+}
+
+/*main*/
+#main {
+    position: relative;
+    width: 100%;
+    /*min-height: calc(100% - 70px);*/
+    min-height: 100%;
+    padding-bottom: 124px;
+}
+
+/*common*/
+.wrap-wide {
+    max-width: 1770px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.wrap-middle {
+    min-width: 1280px;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.wrap-top-notice {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.exchange-width {
+    min-width: 1345px;
+}
+
+.color-red {
+    color: #ff5b5b !important;
+}
+
+.color-balance-red {
+    color: #ff4953 !important;
+}
+
+.color-blue {
+    color: #274bb5 !important;
+}
+
+.color-balance-blue {
+    color: #0e81e5 !important;
+}
+
+.color-skyblue {
+    color: #52aeff !important;
+}
+
+.color-yellow {
+    color: #f0b600 !important;
+}
+
+.color-gray-dark {
+    color: #777777;
+}
+
+.color-gray {
+    color: rgba(27, 27, 27, .5) !important;
+}
+
+.color-gray-light {
+    color: #aaa;
+}
+
+.btn {
+    padding: 11px 40px;
+}
+
+.btn-full {
+    width: 100%;
+}
+
+.btn-red {
+    border-radius: 6px;
+    background-color: #f24747;
+    border: 1px solid #f24747;
+    color: #fff;
+}
+
+.btn-skyblue {
+    border-radius: 6px;
+    background-color: #1d82da;
+    border: 1px solid #1d82da;
+    color: #fff;
+}
+
+.btn-yellow {
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, .15);
+    background-color: #f0b600;
+    border: 1.5px solid #f0b600;
+    color: #fff;
+}
+
+.btn-yellow-border {
+    border-radius: 4px;
+    box-shadow: 0 0 4px 0 #f0b600;
+    border: solid 1px #f0b600;
+    background-color: transparent;
+    color: #f0b600;
+}
+
+.btn-gray {
+    border-radius: 4px;
+    border: solid 1.5px #f0f0f0;
+    background-color: #f9f9f9;
+    color: #1a1a1a;
+}
+
+.none {
+    display: none !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.BTC-symbol {
+    background: url("/public/img/coin/BTC.png") no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.ETH-symbol {
+    background: url("/public/img/coin/ETH.png") no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.FVC-symbol {
+    background: url("/public/img/coin/FVC.png") no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.common-bg {
+    width: 100%;
+    display: flex;
+    background: #202022;
+    padding: 50px 0 90px;
+    justify-content: center;
+}
+
+.common-bg > .wrap-middle > h1 {
+    font-weight: bold;
+}
+
+.common-yellow-box {
+    border-style: solid;
+    border-image: linear-gradient(to left, #F8DA00 0%, #f0b600 100%);
+    border-image-slice: 1;
+    border-image-width: 8px 0 0 0;
+    box-shadow: 5px 5px 8px 0 rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    padding: 70px 80px;
+    width: 600px;
+}
+
+.common-title {
+    font-size: 30px;
+    color: #0a0a0a;
+    margin-bottom: 5px;
+}
+
+.common-title-desc {
+    font-weight: normal;
+    color: #888888;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.common-input-group {
+    margin-bottom: 17px;
+}
+
+.common-input-group > label {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+
+.common-input-group > .common-input {
+    width: 100%;
+    padding: 0 14px;
+    align-items: center;
+    display: flex;
+    height: 50px;
+    border-radius: 6px;
+    border: solid 1px #dddddd;
+    font-size: 16px;
+    transition: all 300ms;
+}
+
+.common-input-group > .common-input:focus {
+
+    border-color: #f0b600;
+}
+
+.common-input-group > .common-input::placeholder {
+    color: #9c9c9c;
+}
+
+.common-alert {
+    font-size: 12px;
+    color: #ff5b5b;
+}
+
+.common-input-group > .common-alert {
+    margin-top: 5px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f0b600;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #202022;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.xl input:checked + .slider:before {
+    -webkit-transform: translateX(86px);
+    -ms-transform: translateX(86px);
+    transform: translateX(86px);
+}
+
+.xxl input:checked + .slider:before {
+    -webkit-transform: translateX(166px);
+    -ms-transform: translateX(166px);
+    transform: translateX(166px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/*비밀번호 유효성*/
+@media screen and (min-width:769px) and (max-width: 1450px) {
+    .common-alert-return > li {
+        position: relative;
+        padding-left: 22px;
+        line-height: 2.36;
+        color: #ff5b5b;
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    .common-alert-return > li:before {
+        position: absolute;
+        top: 50%;
+        left: 2px;
+        width: 10px;
+        text-align: center;
+        transform: translateY(-50%);
+        display: inline-block;
+        content: "\f00d";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        color: #ff5b5b;
+        font-size: 14px;
+        margin-right: 8px;
+    }
+
+    .common-alert-return > li.valid {
+        color: #0a0a0a;
+    }
+
+    .common-alert-return > li.valid:before {
+        content: "\f00c";
+        color: #f0b600;
+    }
+}
+
+.grecaptcha-badge {
+    visibility: hidden;
+}
+
+.loader {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    z-index: 999999;
+    text-align: center;
+    display: table;
+}
+
+.loader > div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.loader p {
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.lds-grid {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+}
+
+.lds-grid div {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #fff;
+    animation: lds-grid 1.2s linear infinite;
+}
+
+.lds-grid div:nth-child(1) {
+    top: 6px;
+    left: 6px;
+    animation-delay: 0s;
+}
+
+.lds-grid div:nth-child(2) {
+    top: 6px;
+    left: 26px;
+    animation-delay: -0.4s;
+}
+
+.lds-grid div:nth-child(3) {
+    top: 6px;
+    left: 45px;
+    animation-delay: -0.8s;
+}
+
+.lds-grid div:nth-child(4) {
+    top: 26px;
+    left: 6px;
+    animation-delay: -0.4s;
+}
+
+.lds-grid div:nth-child(5) {
+    top: 26px;
+    left: 26px;
+    animation-delay: -0.8s;
+}
+
+.lds-grid div:nth-child(6) {
+    top: 26px;
+    left: 45px;
+    animation-delay: -1.2s;
+}
+
+.lds-grid div:nth-child(7) {
+    top: 45px;
+    left: 6px;
+    animation-delay: -0.8s;
+}
+
+.lds-grid div:nth-child(8) {
+    top: 45px;
+    left: 26px;
+    animation-delay: -1.2s;
+}
+
+.lds-grid div:nth-child(9) {
+    top: 45px;
+    left: 45px;
+    animation-delay: -1.6s;
+}
+
+@keyframes lds-grid {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.mb-view {
+    display: none !important;
+}
+
+/*탭*/
+
+.account-tap {
+    display: flex;
+}
+
+.account-tap a:not(.btn) {
+    width: 172px;
+    height: 60px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    background-color: #737378;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.account-tap a.active {
+    background-color: #f0b600;
+}
+
+/*테이블*/
+.member-table {
+    width: 100%;
+    border-top: 3px solid #202022;
+}
+
+.member-table tr {
+    border-bottom: 1px solid #cccccc;
+    height: 50px;
+}
+
+.member-table th {
+    font-size: 16px;
+    background: #f4f4f4;
+    padding: 5px 20px;
+    text-align: left;
+    font-weight: normal;
+}
+
+.member-table thead th {
+    font-weight: 500 !important;
+}
+
+.member-table td {
+    font-size: 16px;
+    padding: 5px 23px;
+    font-weight: normal;
+}
+
+.no-data {
+    height: 100px;
+    color: #999;
+    line-height: 100px;
+}
+
+/* 모바일 */
+@media screen and (max-width:768px) {
+    body {
+        padding-top : 65px !important;
+    }
+}

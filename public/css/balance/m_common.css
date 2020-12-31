@@ -1,0 +1,584 @@
+#main {
+    background-color: #202022;
+    padding-bottom: 0 !important;
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#main > div {
+    width : 100%;
+    color : #ffffff;
+}
+
+#main ul {
+    margin : 0px;
+    padding : 0px;
+    list-style: none;
+}
+
+.margin {
+    margin-bottom : 53px;
+}
+
+.margin-status {
+    margin-bottom : 30px;
+}
+
+.line {
+    height : auto !important;
+    line-height: normal !important;
+}
+
+.line span {
+    padding-top : 6px !important;
+    padding-bottom : 6px !important;
+    height : auto !important;
+    border-bottom : none !important;
+    position : relative;
+}
+
+.line div {
+    position : absolute;
+    top : 50%;
+    right : 23.5px;
+    width : 100%;
+    height : 40px;
+    margin-top : -20px;
+}
+
+.line p {
+    font-size : 13px;
+}
+
+/* 상단 title */
+.account-section {
+    position: relative;
+    height : 65px;
+    color : #ffffff;
+    line-height: 65px;
+    text-align: center;
+    font-size: 18px;
+    background-color: #131314;
+    font-weight: 500;
+}
+
+.account-section .hd-back {
+    color : #fff;
+    position: absolute;
+    left : 9px;
+    top : 16.5px;
+    line-height : 0px;
+}
+
+.account-section .hd-back i {
+    font-size : 30px;
+}
+
+.account-bg {
+    width : 100%;
+    height : auto;
+}
+
+.account-bg .title-div {
+    height : auto;
+    padding : 0 16px 0 16px;
+    position : relative;
+}
+
+.account-bg .title-div .popupPrint {
+    position : relative;
+}
+
+.account-bg .title-div h1 {
+    margin-top : 45px;
+    font-family: AppleSDGothicNeo;
+    font-size: 25px;
+    font-weight: 500;
+    margin-left : 5px;
+    margin-bottom : 8px;
+    display : inline-block;
+}
+
+.account-bg .title-div .calcDesc {
+    margin-left : 5px;
+    margin-bottom : 30px;
+    color: #979797;
+    position : relative;
+    z-index: 500;
+}
+
+.account-bg .title-div .title-calcDesc {
+    margin-left : 5px;
+    margin-bottom : 30px;
+    color: #979797;
+    position : relative;
+}
+
+/* 투자내역 팝업 */
+.account-bg .title-div .popup-box {
+    max-width: none !important;
+    overflow-y: scroll;
+    height: 3000%;
+}
+
+.account-bg .title-div .popup-box .closeBtn {
+    display : block;
+}
+
+.account-bg .title-div .popup-box .popup-head {
+    width : 100% !important;
+    font-size : 16px !important;
+}
+
+.account-bg .title-div .popup-box .popup-content p {
+    font-size : 13px !important;
+}
+
+.title-div .calcDescBtn {
+    margin-right: 9px;
+    cursor: pointer;
+    background-color: transparent;
+    background-image: url(/public/img/balance/information.png);
+    background-position: center;
+    background-size: 100%;
+    width: 23.5px;
+    height: 23.5px !important;
+    border: none;
+    display : inline-block;
+    vertical-align: -1px;
+}
+
+.account-bg .title-div i {
+    font-size : 23.5px;
+    color : #aaa;
+}
+
+.account-bg .title-div .account {
+    height : 100px;
+}
+
+.account-bg .title-div a {
+    width : 50%;
+    height : 50px;
+    line-height: 50px;
+    float : left;
+    border : 0.5px solid #444;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color : #fff;
+}
+
+.account-bg .title-div .active {
+    background-color: #f6d400;
+    color : #0a0a0a;
+    display : block;
+}
+
+.account-bg .title-div .calcDesc .popup-box {
+    transform : skew(-0.1deg) translate(-50%, 0) !important;
+}
+
+.account-bg .title-div .calcDesc .popup-box .closeBtn {
+    display : block !important;
+}
+
+.balance-box {
+    height : auto;
+}
+
+.balance-content {
+    padding : 0 16px 0 16px;
+    overflow-y: scroll;
+}
+
+.balance-content li span {
+    display : block;
+}
+
+.balance-content .balance-asset .asset-line span {
+    padding: 15px 15px 15px 20px !important;
+}
+
+.balance-content .balance-asset .asset-line.no-line {
+    border-bottom: none !important;
+}
+
+.balance-content .balance-asset {
+    width : 100%;
+    height : auto;
+    border: solid 0.5px #444444;
+}
+
+.balance-content .balance-asset>div {
+    height : 50px;
+    line-height: 50px;
+    display : flex;
+    border-bottom : 0.5px solid #444;
+    position: relative;
+}
+
+.balance-content .balance-asset>div span {
+    height : 50px;
+    display : inline-block;
+    font-size : 13px;
+}
+
+.balance-content .balance-asset>div:nth-child(1)>span {
+    font-size : 14px;
+}
+
+.balance-content .balance-asset>div span:nth-child(1) {
+    padding-left : 20px;
+    width : 45%;
+    background-color: #29292b;
+    border-right : 0.5px solid #444;
+    border-bottom: 0.5px solid #444;
+}
+
+.balance-content .balance-asset>div span:nth-child(2) {
+    text-align: right;
+    padding-right : 20.5px;
+    width : 55%;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* 보유내역 */
+.retain-table {
+    width : 100vh;
+}
+
+.retain-table thead tr th:nth-child(1){
+    background-color: #29292b;
+}
+
+.retain-table thead th, .retain-table tbody td {
+    padding: 9.5px 0;
+    border: solid 0.5px #444;
+}
+
+.retain-table thead tr th {
+    padding-right : 1em;
+    text-align : right;
+}
+
+.retain-table thead tr th:nth-child(1) {
+    padding-left : 1em;
+    text-align : left;
+}
+
+.retain-table thead tr th button, .retain-table thead tr th button span{
+    background: transparent;
+    font-size: 13px;
+    color: #ffffff;
+}
+
+.retain-table tbody td, .retain-table tbody td * {
+    text-align : right;
+    font-size: 13px;
+}
+
+.retain-table tbody td {
+    padding-right: 1em;
+}
+
+.retain-table tbody tr td:nth-child(1) {
+    background-color: #29292b;
+}
+
+.retain-table tbody .coin-td > div {
+    padding-left: 1em;
+    text-align: left;
+}
+
+.retain-table tbody .coin-td > div * {
+    text-align: left;
+}
+
+.retain-table thead tr th button.double-td {
+    text-align: right;
+}
+
+/* 체결내역 */
+.balance-options {
+    margin-top : 60px;
+    width : 100%;
+    height : auto;
+    overflow: hidden;
+}
+
+.balance-options .balance-select-boxes {
+    padding : 0 21px 0 21px;
+    overflow: hidden;
+    height: auto;
+}
+
+.balance-options .balance-select-boxes>div {
+    margin-right : 10px;
+    margin-bottom : 10px;
+    float : left;
+}
+
+.balance-options .balance-select-boxes .input-box {
+    width : 140.5px;
+    height : 40px;
+    position : relative;
+}
+
+.balance-options .balance-select-boxes .input-box select {
+    width : 100%;
+    height : 100%;
+    background-color: transparent;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    color : #fff;
+    padding-left : 20px;
+    border: solid 0.5px #979797;
+}
+
+.balance-options .balance-select-boxes .input-box option {
+    background-color : #202022;
+    padding-left : 20px;
+}
+
+.balance-options .balance-select-boxes .input-box select::-ms-expand {
+    display:hidden;
+}
+
+.balance-options .balance-select-boxes .input-box ul {
+    width : 100%;
+    height : 100%;
+    border: solid 0.5px #979797;
+    line-height: 40px;
+    overflow: hidden;
+}
+
+.balance-options .balance-select-boxes .input-box ul li {
+    width : 100%;
+    height : 100%;
+    text-indent: 20px;
+}
+
+.balance-options .balance-select-boxes .bg-input {
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    position: absolute;
+    opacity: 0;
+    z-index: 10;
+}
+
+
+.balance-select-boxes .input-box:after {
+    position: absolute;
+    content: '';
+    width: 12px;
+    height: 8px;
+    background-image: url("/public/img/balance/select-arrow.png");
+    background-size: 100%;
+    background-position: center;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+}
+
+/* 개인거래,체결,입출금내역 table */
+.balance-table-content {
+    width : 100%;
+    height  :auto;
+    overflow-x: scroll;
+}
+
+.balance-table-content .history-table {
+    width : 200vw;
+    height : auto;
+    table-layout: fixed;
+}
+
+.balance-table-content .history-table thead tr {
+    height : 50px;
+    border-bottom : 0.5px solid #333;
+}
+
+.balance-table-content .history-table thead tr th {
+    border-top : 0.5px solid #333;
+    font-size : 12.5px;
+    background-color: #29292b;
+    /* height:100px; */
+    /* padding-bottom:50px; */
+}
+
+.balance-table-content .history-table tbody tr td {
+    height : 64px;
+    text-align: center;
+    background-color : #202022;
+    font-size : 12.5px;
+    word-break: break-all;
+}
+
+.balance-table-content .history-table tbody tr:nth-child(2n) td {
+    position: relative;
+    z-index: 40;
+    padding:0 20px;
+    border-top:1px solid #333;
+    border-bottom: 1px solid #333;
+}
+
+.balance-table-content .history-table thead tr th span, .balance-table-content .history-table tbody tr td span {
+    font-size : 12.5px;
+}
+
+.balance-table-content .history-table thead tr .fixed, .balance-table-content .history-table tbody tr .fixed {
+    display : flex;
+}
+
+.balance-table-content .history-table thead tr th:nth-child(1), .balance-table-content .history-table tbody tr td:nth-child(1) {
+    border-right : 0.5px solid #333;
+}
+
+.balance-table-content .history-table tbody tr:last-child {
+    border-bottom : 0.5px solid #333;
+}
+
+.balance-table-content .history-table tbody tr:last-child td:nth-child(1) {
+    border-bottom : 0.5px solid #333;
+}
+
+.balance-table-content .history-table thead .fixed {
+    height : 50px;
+    line-height: 50px;
+}
+
+.balance-table-content .history-table .fixed {
+    position : absolute;
+    left : 0px;
+    width : 50vw;
+    height : 64px;
+    line-height: 64px;
+    z-index : 30;
+}
+
+.balance-table-content .history-table thead .fixed span {
+    line-height: initial;
+}
+
+.balance-table-content .history-table td.fixed span {
+    border-bottom:1px solid #333;
+}
+
+.balance-table-content .history-table tr:first-child td.fixed span {
+    border-top:none;
+}
+
+.balance-table-content .history-table .fixed.deposit-fixed {
+    width : 47.5vw !important;
+}
+
+.balance-table-content .history-table .fixed span {
+    font-size: 12.5px;
+    width : 50%;
+    display : inline-block;
+    line-height : normal;
+    position : absolute;
+    top : 0%;
+    /* height:100%; */
+    line-height: 64px;
+}
+
+.balance-table-content .history-table thead .fixed span {
+    /* height:50%; */
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+
+.balance-table-content .history-table .fixed span:nth-child(1) {
+    width : 50%;
+    display : inline-block;
+}
+
+.balance-table-content .history-table .fixed span:nth-child(2) {
+    left : 50%;
+}
+
+.balance-table-content .history-table .fixed span:nth-child(3) {
+    left:0;
+    bottom:1px;
+    top:unset;
+    transform: translateY(0);
+    width:calc(200% + 20px);
+    display: inline-block;
+    background-color: #202022;
+    padding:0 20px;
+    border:1px solid #333;
+    border-width: 1px 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.balance-table-content .history-table thead .fixed span:nth-child(3) {
+    background-color: #29292b;
+    bottom:0;
+    border-bottom:0;
+}
+
+.balance-table-content .history-table .padding {
+    padding-right : 20px;
+}
+
+.history-table tbody tr td.txid {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.no-data {
+    line-height: normal !important;
+}
+
+/* 상태 팝업 btn */
+.statusDesc {
+    width : 15.5px;
+    height : 15.5px;
+    display : inline-block;
+}
+
+.statusDesc .descIcon {
+    margin-left: 4.5px;
+    cursor: pointer;
+    background-color: transparent;
+    background-image: url(/public/img/balance/information.png);
+    background-position: center;
+    background-size: 100%;
+    width: 15.5px;
+    height: 15.5px;
+    border: none;
+    vertical-align: middle;
+}
+
+.balance-table-content .history-table .popup-box .popup-content p {
+    font-family: NotoSansKR-Regular;
+}
+
+.balance-table-content .history-table .popup-box .popup-content em {
+    font-family: NotoSansKR-Bold;
+    font-weight: bold;
+}
+
+.paging {
+    margin-bottom : 63px;
+}
+
+/* txid 팝업 */
+.popup-box .popup-head {
+    word-break: break-all;
+}

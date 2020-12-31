@@ -1,0 +1,78 @@
+#main {
+    display: flex;
+}
+
+/*IE*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .common-bg.login {
+        padding: 75px 0 115px;
+    }
+}
+
+.login-box #loginBtn {
+    width: 100%;
+    margin-top: 30px;
+    outline: none;
+    height: 56px;
+    font-weight: bold;
+    font-size: 16px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box #loginBtn > i {
+    margin-right: 3px;
+    font-size: 20px;
+}
+
+.link-box {
+    display: flex;
+    background: #f9f9f9;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.link-box > div {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.86;
+}
+
+.link-box > .link-desc {
+    width: 100%;
+    color: #333333;
+    padding-left: 30px;
+    position: relative;
+}
+
+.link-box > .link-desc > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.link-box > .link-desc:before {
+    background: url("/public/img/common/attention.svg") no-repeat center center;
+    background-size: 100% 100%;
+    content: "";
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    top: 5px;
+    color: #838383;
+    width: 21px;
+    height: 18px;
+}
+
+.link-a > a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #0a0a0a;
+    min-width: 115px;
+    text-align: left;
+    display: inline-block;
+}

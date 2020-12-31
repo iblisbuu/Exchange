@@ -1,0 +1,135 @@
+.que-content {
+    border-top: 3px solid #0a0a0a;
+    padding: 40px 20px 70px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.que-input-group {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.que-input-group > span {
+    font-size: 16px;
+    font-weight: 500;
+    color: #0a0a0a;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    min-width: 100px;
+    margin-right: 10px;
+}
+
+.que-input-group > input[type='text'], .que-input-group select {
+    width: 100%;
+    height: 45px;
+    border-radius: 6px;
+    border: solid 1px #dddddd;
+    padding: 12px;
+    font-size: 14px;
+}
+
+.que-input-group > input[type='text']::placeholder {
+    color: #aaa;
+}
+
+.que-header {
+    max-width: 530px;
+    margin-bottom: 20px;
+}
+
+.que-header .que-input-group {
+    margin-bottom: 10px;
+}
+
+.que-body {
+    max-width: 875px;
+}
+
+.que-body .que-input-group.margin-bottom {
+    margin: 10px 0 20px;
+    color: #777777;
+    font-size: 14px;
+}
+
+.note-statusbar.locked {
+    display: none !important;
+}
+
+label[for='queFile'] {
+    font-size: 15px;
+    color: #0a0a0a;
+    padding: 10px 30px;
+    border-radius: 6px;
+    border: solid 1px #dddddd;
+    font-weight: normal;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.que-input-group.file {
+    align-items: center;
+}
+
+.que-input-group.file input[type='file'] {
+    display: none;
+}
+
+.file-name-box {
+    display: flex;
+}
+
+.que-input-group.file .file-name-box .file-name {
+    font-size: 15px;
+    color: #026ad1;
+    font-weight: normal;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.que-input-group.file .file-name-box .file-name:last-child {
+    margin-right: 0;
+}
+
+.que-input-group.file .file-name-box .file-name > button {
+    margin-left: 5px;
+    background: transparent url('/public/img/common/close.svg') no-repeat center;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-size: contain;
+}
+
+.que-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.que-btn #btnSend {
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.15);
+    background-color: #f0b600;
+    color: #ffffff !important;
+    border: #f0b600;
+}
+
+.que-btn #goBack {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: #fff;
+}
+
+.note-modal-content{
+    position: fixed !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 0 0 10px 0;
+}

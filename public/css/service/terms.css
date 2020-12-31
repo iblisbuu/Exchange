@@ -1,0 +1,33 @@
+.common-bg {
+    padding: 100px 0 !important;
+}
+
+.common-yellow-box {
+    padding: 100px !important;
+    width: 100% !important;
+}
+
+.account-tap a:not(.btn) {
+    width: 220px !important;
+}
+
+.common-yellow-box > h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0a0a0a;
+}
+
+.terms_content {
+    padding: 20px 0;
+    border-top: 3px solid #0a0a0a;
+    margin-top: 20px;
+    font-weight: normal;
+}
+
+.terms_content * {
+    color: #0a0a0a;
+}
+
+.common-bg {
+    display: block !important;
+}

@@ -1,0 +1,221 @@
+#main {
+    display: flex;
+    flex-direction: column;
+    background: #202022;
+}
+/* 상단 title */
+.account-section {
+    position: relative;
+    width:100%;
+    height : 65px;
+    color : #ffffff;
+    line-height: 65px;
+    text-align: center;
+    font-size: 18px;
+    background-color: #131314;
+    font-weight: 500;
+}
+
+.account-section .hd-back {
+    color : #fff;
+    position: absolute;
+    left : 9px;
+    top : 16.5px;
+    line-height : 0px;
+}
+
+.account-section .hd-back i {
+    font-size : 30px;
+}
+
+.member-box .member-title {
+    padding : 30px 0;
+}
+
+.member-box .member-title h1 {
+    margin : 15px 22.5px;
+    font-family: AppleSDGothicNeo;
+    font-size: 30px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.member-box .member-title p {
+    margin : 15px 0 0 21px;
+    color: #979797;
+}
+
+.member-box .member-input-group {
+    position : relative;
+    display : flex;
+    flex-direction: column;
+    padding : 1em 1.5em;
+}
+
+.member-box .member-input-group > span {
+    position : absolute;
+    border-radius: 6px 6px 0 0;
+    width : 42px;
+    height : 53px;
+    display : block;
+    background: #202022;
+    /* bottom: 16px; */
+}
+
+.member-box .member-input-group > span i {
+    font-size: 32px;
+    color: #979797;
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.member-box .member-input-group input{
+    width : 100%;
+    height : 55px;
+    border : none;
+    border-bottom : 0.5px solid #4d4d4d;
+    background-color: transparent !important;
+    color : #fff;
+    font-size : 14px;
+    text-indent : 45px;
+    padding-right: 83px;
+}
+
+.member-box .member-input-group input:focus {
+    border-radius: 6px 6px 0 0;
+    background-color: #29292b !important;
+    box-shadow: -5px -5px 15px 0 rgba(0, 0, 0, 0.1), 5px 5px 15px 0 rgba(0, 0, 0, 0.1);
+    border-bottom: solid;
+    border-image: linear-gradient(to right, #f8db00 -23%, #f0b600);
+    border-image-slice: 1;
+    border-image-width: 0 0 1.5px 0;
+}
+
+/* input 자동완성 */
+.member-box .member-input-group input:-webkit-autofill {
+    transition: background-color 5000s ease-in-out 0s;
+     -webkit-transition: background-color 9999s ease-out;
+     -webkit-text-fill-color: #fff !important;
+     -webkit-box-shadow : 0 0 0px 1000px #29292b inset !important;
+    border-image: linear-gradient(to right, #f8db00 -23%, #f0b600);
+    border-image-slice: 1;
+    border-image-width: 0 0 1.5px 0;
+    font-size: inherit;
+}
+
+.member-box .member-input-group .common-alert {
+    font-size: 13px;
+    margin: 12.5px 0 0 1em;
+    word-break: break-all;
+}
+
+.member-box .member-btn {
+    padding : 17.5px 1em 76.5px 1em;
+}
+
+.member-box .member-btn button {
+    width : 100%;
+    height: 55px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #131415;
+    border-radius: 6px;
+    background-image: linear-gradient(to right, #f8db00 -23%, #f0b600);
+}
+
+.member-box .member-btn button:disabled {
+    background-image : none !important;
+    background-color : #39393c !important;
+    color: #ffffff !important;
+    opacity: 0.6;
+}
+
+.common-alert {
+    word-break : break-all;
+}
+
+/* 비밀번호 확인 */
+.member-box .member-alert-return {
+    padding : 0 2.5em;
+}
+
+.member-box .member-alert-return li {
+    line-height : 35px;
+}
+
+.member-box .member-alert-return li i {
+    margin-right : 14.5px;
+    width : 20px;
+    height : 20px;
+    border-radius: 100%;
+    border : 1px solid #595960;
+    color : #595960;
+    text-align : center;
+    line-height: 18px;
+}
+
+.member-box .member-alert-return li i.valid {
+    border : 1px solid #f0b600;
+    color : #f0b600;
+}
+
+.member-box .member-alert-return li label {
+    color : #fff;
+}
+
+/* 남은시간 */
+.auth-time {
+    position: absolute;
+    right: 4.5em;
+    color: #d95151;
+}
+
+.auth-time > span {
+    position: absolute;
+    width: 42px;
+    height : 30px;
+    margin-left: 4px;
+    display : inline-block !important;
+}
+
+.certified-alert {
+    font-size: 13px;
+    color : #fff;
+    text-align : center;
+    padding-bottom : 30px;
+}
+
+.certified-alert > a {
+    font-weight: 500;
+    line-height: 2.12;
+    
+    color : #ffb700;
+    text-decoration: underline;
+}
+
+/* sms/otp info */
+.account-common-title > p {
+    margin : 30px 59px 30px 21px;
+    color: #ffffff;
+}
+
+.account-common-send-info {
+    padding : 0 21px;
+}
+
+.account-common-send-info > p {
+    color: #ffb600;
+    margin-bottom : 10px;
+}
+
+.account-common-send-info > label {
+    color: #979797;
+    display : block;
+    margin-bottom : 20px;
+}
+
+.account-common-box .member-btn {
+    padding: 20px 1em 30px;
+}

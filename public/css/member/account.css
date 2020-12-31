@@ -1,0 +1,324 @@
+#main {
+    display: flex;
+}
+
+.common-bg {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start !important;
+}
+
+.account-section > .wrap-middle > h1 {
+    color: #ffffff;
+    font-size: 32px;
+    text-align: left;
+    margin-bottom: 30px;
+    width: 100%;
+
+}
+
+.access-table-div .member-table {
+    border-top: 0;
+}
+
+.account-div .member-btn {
+    display: inline-block;
+    border-radius: 6px;
+    border: solid 1px #979797;
+    padding: 5px 20px;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.account-div .member-btn.go {
+    margin-left: 30px;
+    position: relative;
+    padding-right: 30px;
+}
+
+.account-div .member-btn.go:after {
+    content: "\e93f";
+    position: absolute;
+    font-size: 15px;
+    margin-left: 5px;
+    top: 47%;
+    transform: translateY(-50%);
+    font-family: xeicon;
+}
+
+.account-div .member-btn.wallet-btn {
+    float: right;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.common-yellow-box {
+    border-image-width: 6px 0 0 0 !important;
+    width: 100% !important;
+    padding: 100px !important;
+}
+
+.common-yellow-box h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#info-content, #certification-content {
+    display: flex;
+    flex-direction: column;
+}
+
+#info-content > div {
+    margin-bottom: 40px;
+}
+
+#certification-content > div {
+    margin-bottom: 50px;
+}
+
+.access-table-div {
+    display: block;
+}
+
+.td-500 {
+    font-weight: 500 !important;
+}
+
+.member-table .chk-radio {
+    display: none;
+}
+
+.member-table label {
+    display: inline-block;
+    font-size: 16px;
+    position: relative;
+    padding: 0 26px 0 30px;
+}
+
+.member-table label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    border: solid 1px #979797;
+}
+
+.member-table .chk-radio:checked + label:before {
+    font-family: xeicon;
+    content: "\e929";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 21px;
+}
+
+.level-box {
+    width: 100%;
+    height: 120px;
+    border: solid 1px #dddddd;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: normal;
+    font-size: 22px;
+}
+
+.level-box span {
+    color: #f0b600;
+    font-size: 22px;
+    margin: 0 5px;
+    font-weight: bold;
+}
+
+.level-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.level-item {
+    width: 348px;
+    height: 338px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 1px #dddddd;
+    border-top: 0;
+    padding: 45px 10px 60px;
+    position: relative;
+}
+
+.level-item:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 8px;
+    background: #ddd;
+    top: 0;
+    left: 0;
+}
+
+.level-item.complete:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 8px;
+    background-image: linear-gradient(to left, #f0b600, #f8db00 0%);
+    top: 0;
+    left: 0;
+}
+
+.level-item img {
+    width: 75px;
+}
+
+.level-item h3 {
+    font-size: 20px;
+    color: #777777;
+    position: relative;
+    padding-left: 35px;
+}
+
+.level-item h3:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 28px;
+    background: url("/public/img/account/level-ck-off.png") no-repeat;
+    background-size: 100%;
+}
+
+.level-item.complete h3 {
+    color: #f0b600;
+}
+
+.level-item.complete h3:before {
+    background: url("/public/img/account/level-ck-on.png") no-repeat;
+    background-size: 100%;
+}
+
+.level-item > div {
+    text-align: center;
+}
+
+.level-item span {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.level-item p {
+    font-size: 18px;
+    color: #777777;
+    font-weight: bold;
+}
+
+.level-list {
+    border-top: 3px solid #0a0a0a;
+}
+
+.level-list .level-row {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+
+.level-list .level-title {
+    padding: 35px 0 35px 10px;
+    position: relative;
+    font-weight: bold;
+    font-size: 18px;
+    width: 154px;
+}
+
+.level-list .level-title span {
+    font-size: 16px;
+    color: #777777;
+    margin-right: 4px;
+}
+
+.level-list .level-title:after {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 30%;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #ddd;
+}
+
+.level-list .level-content {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    font-size: 16px;
+    font-weight: normal;
+    flex: 1;
+}
+
+.level-list .level-content strong {
+    font-size: 16px;
+}
+
+.level-list .level-content .member-btn {
+    margin-left: 23px;
+}
+
+.level-list .level-content .level-email {
+    font-size: 16px;
+    color: #aaaaaa;
+    padding: 11px 14px;
+    min-width: 274px;
+    border: solid 1px #dddddd;
+    background-color: #f0f0f0;
+}
+
+.access {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid #202022;
+    position: relative;
+}
+
+.access-btn {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.access-btn:before {
+    content: "\e943";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    font-family: xeicon;
+    transform: translateY(-50%);
+    font-size: 25px;
+    color: #bbbbbb;
+}
+
+.access-btn.close:before {
+    content: "\e946";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    font-family: xeicon;
+    transform: translateY(-50%);
+    font-size: 25px;
+    color: #bbbbbb;
+}
+

@@ -12,11 +12,11 @@ define($PROJECT . '_ESCAPE_FUNCTION', 'sql_escape_string');
 // PHP MAILER
 define($PROJECT . '_SMTP', 'smtp.gmail.com');
 define($PROJECT . '_SMTP_PORT', 465);
-define($PROJECT . '_SMTP_USER', 'certified@genesis-ex.com'); // 보내는 메일 주소
-define($PROJECT . '_SMTP_PASSWORD', 'wpsptltm1!'); // 비밀번호
+define($PROJECT . '_SMTP_USER', 'email'); // 보내는 메일 주소
+define($PROJECT . '_SMTP_PASSWORD', 'password'); // 비밀번호
 
-define('SMS_SEED', 'ACc4675fb09c54c862829002f2a1a2fb59');
-define('SMS_TOKEN', '9ed56f1a15a36c35c2e0c2eb3f8880c7');
+define('SMS_SEED', 'token');
+define('SMS_TOKEN', 'token');
 
 @session_start();
 

@@ -5,19 +5,19 @@ class db
     // Project Database
     private $PROJECT_DB = array(
         'DEFAULT' => array(
-            'host' => 'new-genesis-ex.clx0xrz6l16b.ap-northeast-2.rds.amazonaws.com',
-            'user' => 'codberg_genesis',
-            'password' => 'Dusqhd^000aksdnjs'
+            'host' => 'host',
+            'user' => 'user',
+            'password' => 'password'
         ),
         'TESTING' => array(
-            'host' => 'new-genesis-ex.clx0xrz6l16b.ap-northeast-2.rds.amazonaws.com',
-            'user' => 'genesis_testing',
-            'password' => 'OEl6Eke3Hpf6EnjP'
+            'host' => 'test host',
+            'user' => 'test user',
+            'password' => 'test password'
         )
     );
 
     // Database Name
-    private $DB_ARR = array('codberg_genesis', 'genesis_testing');
+    private $DB_ARR = array('database', 'test database');
     private $conn;
 
     public function __construct()
